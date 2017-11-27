@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .courseInfo dt figure {
+  margin: 0 auto;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .search br {
+  display: none;
+}
+.main .doc .search dt,
+.main .doc .search dd {
+  float: none;
+}
+.main .doc .search dt span,
+.main .doc .search dd span {
+  display: block;
+  width: auto;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+.main .doc .search dt:before,
+.main .doc .search dd:before {
+  display: none;
+}
+.main .doc .search dt {
+  margin-bottom: 30px;
+}
+.main .doc .search select {
+  width: 100%;
+}
+.main .doc .search .searchBtn,
+.main .doc .search .buyBtn {
+  padding: 0;
+  width: 100%;
+}
+.main .doc .search .points {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.main .doc .final .buyBtn,
+.main .doc .final .resetBtn {
+  padding: 0 15px;
+}
+.main .doc .sellItems {
+  text-align: left;
+  /* 以checkbox 模式使用 begin */
+  /* 以checkbox 模式使用 end */
+  /* 以<A> 模式使用 begin */
+  /* 以<A> 模式使用 end */
+}
+.main .doc .sellItems ul {
+  display: block;
+  width: auto;
+}
+.main .doc .sellItems ul li {
+  margin-left: calc((100% - 94px * 3) / 6);
+  margin-right: calc((100% - 94px * 3) / 6);
+}
+.main .doc .sellItems ul br.break-3 {
+  display: block;
+}
+.main .doc .sellItems ul br.break-5,
+.main .doc .sellItems ul br.break-6 {
+  display: none;
+}
+.main .doc .sellItems label.group:hover span {
+  color: #313131;
+}
+.main .doc .sellItems label.group:hover strong {
+  background-position: left top;
+}
+.main .doc .sellItems a.group {
+  text-decoration: none;
+}
+.main .doc .sellItems .group strong {
+  background-position: left bottom;
+}
+.main .doc .sellItems a.group span {
+  text-decoration: underline;
+}
+.main .doc .shoppingItems .features ul li,
+.main .doc .courseInfo dd .features ul li {
+  float: none;
+  width: auto;
+  margin-right: 0;
+  padding-right: 15px;
+}
+.main .doc .shoppingItems .features ul .break-2 {
+  display: none;
+}
+.main .doc .courseInfo > br {
+  display: none;
+}
+.main .doc .courseInfo dt,
+.main .doc .courseInfo dd {
+  float: none;
+  width: auto;
+  height: auto;
+}
+.main .doc .courseInfo dt {
+  padding-top: 25px;
+}
+.main .doc .courseInfo dt figure {
+  margin-bottom: 25px;
+  width: 78%;
+  height: 180px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .courseInfo dt figure {
+    height: 360px;
+  }
+}
+.main .doc .courseInfo dd:before {
+  display: none;
+}
+.main .doc .courseInfo dd {
+  padding: 0 15px;
+}
+.main .doc .courseInfo dd .features ul {
+  display: block;
+  margin-bottom: 20px;
+}
+.main .doc .courseInfo dd .features ul li {
+  padding-right: 0;
+}
+.main .doc .courseInfo dd .intro,
+.main .doc .courseInfo dd .shopping {
+  display: block;
+  width: auto;
+}
+.main .doc .courseInfo dd .intro .socialShare {
+  display: none;
+}
+.main .doc .courseInfo dd .intro .socialShare.rwd {
+  display: block;
+  padding-bottom: 15px;
+  text-align: right;
+}
+.main .doc .courseInfo dd .intro .socialShare.rwd > * {
+  margin-left: 5px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .courseInfo dd .shopping {
+    /*橫向*/
+  }
+  .main .doc .courseInfo dd .shopping ul li {
+    width: 50%;
+    float: left;
+  }
+}
+.main .doc .courseInfo dd .shopping button {
+  width: 100%;
+}
+.main .doc .toBuy:before {
+  display: none;
+}
+.main .doc .toBuy {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.main .doc .shoppingInfo dt {
+  width: 50%;
+}
+.main .doc .shoppingInfo dt.inLeft {
+  left: 0;
+}
+.main .doc .shoppingInfo dt.inRight {
+  left: 50%;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.price {
+  width: auto;
+}
+.main .doc .contentTable .pd.actions {
+  width: auto;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .search dt span {
+    float: left;
+    width: calc(25% - 5px);
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+  .main .doc .search dt > *:last-child {
+    float: right;
+    margin-right: 0;
+  }
+  .main .doc .search dt:after,
+  .main .doc .search dd:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+  .main .doc .search .searchBtn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .main .doc .search .searchBtn span {
+    display: inline;
+    width: auto;
+    float: none;
+    margin: 0;
+  }
+  .main .doc .search .buyBtn {
+    float: right;
+    width: 24%;
+  }
+  .main .doc .search .points {
+    float: left;
+    width: calc(75% - 5px);
+    margin-right: 5px;
+  }
+  .main .doc .final .buyBtn,
+  .main .doc .final .resetBtn {
+    padding: 0 45px;
+  }
+  .main .doc .sellItems ul li {
+    margin-left: calc((100% - 94px * 5) / 10);
+    margin-right: calc((100% - 94px * 5) / 10);
+  }
+  .main .doc .sellItems ul br.break-5 {
+    display: block;
+  }
+  .main .doc .sellItems ul br.break-3,
+  .main .doc .sellItems ul br.break-6 {
+    display: none;
+  }
+  .main .doc .shoppingItems .features {
+    padding-left: 5%;
+  }
+  .main .doc .shoppingItems .features ul .break-2 {
+    display: block;
+  }
+  .main .doc .shoppingItems .features ul li {
+    float: left;
+    width: calc(45% - 20px);
+    padding-left: 20px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    padding-right: 0;
+  }
+  .main .doc .courseInfo {
+    position: relative;
+  }
+  .main .doc .courseInfo dt figure {
+    margin: 0;
+    margin-left: 15px;
+    width: 75%;
+    height: 400px;
+  }
+  .main .doc .courseInfo dd .intro .socialShare {
+    display: none;
+  }
+  .main .doc .courseInfo dd .intro .socialShare.rwd {
+    position: absolute;
+    top: 225px;
+    right: 15px;
+    padding-bottom: 0;
+  }
+  .main .doc .courseInfo dd .shopping ul {
+    border-left: none;
+    padding: 0;
+  }
+  .main .doc .courseInfo dd .shopping ul li {
+    width: 50%;
+    float: left;
+  }
+  .main .doc .courseInfo dd .shopping ul li strong {
+    padding-left: 10px;
+    border-left: #f7931e solid 3px;
+  }
+  .main .doc .courseInfo dd .shopping button {
+    margin-top: 25px;
+  }
+  .main .doc .toBuy:before {
+    display: none;
+  }
+  .main .doc .shoppingInfo dt {
+    width: 50%;
+  }
+  .main .doc .shoppingInfo dt.inLeft {
+    left: 0;
+  }
+  .main .doc .shoppingInfo dt.inRight {
+    left: 50%;
+  }
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.name {
+    width: 85%;
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 9%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: 30%;
+    max-width: auto;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .courseInfo {
+    position: relative;
+  }
+  .main .doc .courseInfo dt figure {
+    margin: 0;
+    margin-left: 15px;
+    width: 75%;
+    height: 500px;
+  }
+  .main .doc .courseInfo dd .intro .socialShare.rwd {
+    top: 275px;
+    right: 30px;
+  }
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 25%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: inherit;
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

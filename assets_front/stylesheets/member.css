@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .registering .selectType, .main .doc .registering .sending button {
+  font-family: Arial, Helvetica, sans-serif, Microsoft YaHei, Microsoft JhengHei, '微软雅黑体', '微軟雅黑體', '微軟正黑體', '黑體';
+}
+
+.main .doc .registering .sheet th:before,
+.main .doc .registering .sheet td:before, .main .doc .registering .sideOptions li:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet td span,
+.main .doc .registering .sheet .textType,
+.main .doc .registering .sheet img, .main .doc .registering .sideOptions li label input,
+.main .doc .registering .sideOptions li label span {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .registering .sending button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+/* 會員表格共用 begin */
+.main .pageOnly-width-330 {
+  width: 27.54591%;
+}
+.main .pageOnly-width-440 {
+  width: 36.72788%;
+}
+.main .pageOnly-width-570 {
+  width: 47.5793%;
+}
+.main .pageOnly-width-680 {
+  width: 56.76127%;
+}
+.main .pageOnly-width-990 {
+  width: 82.63773%;
+}
+.main .inLeft {
+  float: left;
+  width: 40%;
+}
+.main .inLeft.shift {
+  padding-right: 10%;
+}
+.main .inRight {
+  float: right;
+  width: 40%;
+}
+.main .inRight.shift {
+  padding-left: 10%;
+}
+.main .doc .registering .sheet {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  /*border: #ff0000 solid 1px;*/
+  padding: 5px 0;
+}
+.main .doc .registering .sheet th {
+  text-align: left;
+  font-weight: normal;
+}
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet th sup,
+.main .doc .registering .sheet td span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .registering .sheet th sup {
+  color: #ff0000;
+}
+.main .doc .registering .sheet td {
+  position: relative;
+  width: 65%;
+}
+.main .doc .registering .sheet td .error {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  color: #ff0000;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.main .doc .registering .sheet td .error strong {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: none;
+  font-weight: normal;
+  padding-left: 3px;
+}
+.main .doc .registering .sheet td .error strong.open {
+  display: inline;
+}
+.main .doc .registering .sheet td .error.open {
+  display: inline;
+}
+
+/* 會員表格共用 end */
+.main .doc .master {
+  background-color: #f6f6f6;
+}
+.main .doc .registering {
+  position: relative;
+  padding: 50px 0;
+}
+.main .doc .registering h3,
+.main .doc .registering .note,
+.main .doc .registering .sheet {
+  margin-bottom: 40px;
+}
+.main .doc .registering h3 {
+  text-align: center;
+}
+.main .doc .registering h3 span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  margin-left: -30px;
+  padding: 3px 0;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.main .doc .registering h3.reg span {
+  background-image: url("../images/frame_member_reg_01.gif");
+}
+.main .doc .registering h3.service span {
+  background-image: url("../images/frame_member_reg_02.gif");
+}
+.main .doc .registering h3.pwd span {
+  background-image: url("../images/frame_member_reg_03.gif");
+}
+.main .doc .registering h3.resetPwd span {
+  background-image: url("../images/frame_member_reg_04.gif");
+}
+.main .doc .registering h3.logout span {
+  background-image: url("../images/frame_member_reg_02.gif");
+  /*background-image: url('../images/frame_member_reg_05.gif');*/
+}
+.main .doc .registering .note p {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding-left: 22px;
+  line-height: 1.55;
+  background-repeat: no-repeat;
+  background-position: left 5px;
+  background-image: url("../images/frame_member_reg_check.gif");
+}
+.main .doc .registering .textType {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding: 8px 5px;
+  width: calc(98% - 5px - 5px);
+  border: #a6a6a6 solid 1px;
+  color: #333;
+}
+.main .doc .registering .textType.security {
+  width: calc(43% - 5px - 5px);
+}
+.main .doc .registering .checkTypeTrigger {
+  padding-right: 1em;
+}
+.main .doc .registering .selectType {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  border: #a6a6a6 solid 1px;
+  background: #fff;
+  padding: 8px 15px;
+  padding-right: 45px;
+  margin-right: 10px;
+  width: calc(98% - 5px - 5px);
+  /*max-width: 200px;*/
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-image: url("../images/frame_select_custom_arrow.gif");
+  background-image: none\9\0;
+  /*IE 9*/
+}
+.main .doc .registering .selectType::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+.main .doc .registering .selectType:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+.main .doc .registering .sideOptions {
+  width: 99%;
+  float: right;
+}
+.main .doc .registering .sideOptions li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.main .doc .registering .sideOptions li label span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+}
+.main .doc .registering .spLine {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: 50px;
+  bottom: 50px;
+  width: 1px;
+  background-color: #a0a0a0;
+}
+.main .doc .registering .sending button {
+  background-color: #f7931e;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+.main .doc .registering .sending button span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.main .doc .registering .sending button:active {
+  background-color: #e27a00;
+}
+.main .doc .registering .sending,
+.main .doc .registering .textPart {
+  margin-bottom: 20px;
+}
+.main .doc .registering .textPart a {
+  color: #f7931e;
+  text-decoration: none;
+}
+.main .doc .registering .textPart a:hover {
+  text-decoration: underline;
+}
+.main .doc .registering .textPart span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 2;
+}
+.main .doc .registering .textPart.accept span,
+.main .doc .registering .textPart.sending span,
+.main .doc .registering .textPart.isMember span,
+.main .doc .registering .textPart.isPassword span {
+  padding: 0 3px;
+  line-height: 1.55;
+}
+.main .doc .registering .textPart.isPassword {
+  margin-top: -45px;
+  text-align: right;
+}
+.main .doc .registering .textPart.isPassword span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 0;
+}
+.main .doc .registering .textPart.accept {
+  position: relative;
+}
+.main .doc .registering .textPart.accept .error {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  color: #ff0000;
+  padding-top: 10px;
+  padding-left: 10px;
+  top: -30px;
+}
+.main .doc .registering .textPart.accept .error strong {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: none;
+  font-weight: normal;
+  padding-left: 3px;
+}
+.main .doc .registering .textPart.accept .error strong.open {
+  display: inline;
+}
+.main .doc .registering .textPart.accept .error.open {
+  display: inline;
+}
+
+/* 裝置螢幕高度小於等於768px begin */
+/* 裝置螢幕高度小於等於768px end */

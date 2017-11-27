@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .search dt:before,
+.main .doc .search dd:before, .main .doc .courseInfo dd:before, .main .doc .toBuy:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .search button,
+.main .doc .search select, .main .doc .search .points, .main .doc .courseInfo dd .intro,
+.main .doc .courseInfo dd .shopping {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .search button,
+.main .doc .search select, .main .doc .courseInfo dd .shopping button, .main .doc .shoppingInfo dt button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main {
+  /* 共用的標題樣式 begin */
+  /* 共用的標題樣式 end */
+  /* 共用的清單樣式 begin */
+  /* 共用的清單樣式 end */
+}
+.main h3.subTitle {
+  margin-bottom: 25px;
+  background-color: #ffe8ce;
+  text-align: center;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding: 13px 0px;
+  padding-left: 50px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_curriculum_title_bg.gif");
+}
+.main .doc .search {
+  margin-bottom: 25px;
+}
+.main .doc .search br {
+  display: block;
+}
+.main .doc .search dt {
+  float: left;
+}
+.main .doc .search dt span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.main .doc .search dd {
+  float: right;
+}
+.main .doc .search button,
+.main .doc .search select {
+  height: 50px;
+}
+.main .doc .search select {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  background-color: #ffe8ce;
+  border: #f7931e solid 1px;
+  padding: 12px 15px;
+  padding-right: 45px;
+  width: auto;
+  /*max-width: 400px;*/
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../images/frame_curriculum_select_arrow.gif");
+  background-image: none\9\0;
+  /*IE 9*/
+}
+.main .doc .search select::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+.main .doc .search select:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+.main .doc .search select option {
+  background-color: #ffe8ce;
+}
+.main .doc .search select option:checked {
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .search .searchBtn,
+.main .doc .search .buyBtn {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  cursor: pointer;
+  padding: 0 25px;
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .final {
+  /*覆寫*/
+  padding: 30px 0;
+  text-align: center;
+}
+.main .doc .final .resetBtn {
+  margin-right: 15px;
+}
+.main .doc .sellItems {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+  /*
+  ul li:nth-child(5n){
+  	margin-right: 0;
+  }
+  */
+  /* 以checkbox 模式使用 begin */
+  /* 以checkbox 模式使用 end */
+  /* 以<A> 模式使用 begin */
+  /* 以<A> 模式使用 end */
+}
+.main .doc .sellItems ul {
+  display: inline-block;
+  width: 90%;
+}
+.main .doc .sellItems ul li {
+  float: left;
+  margin-left: calc((100% - 94px * 6) / 12);
+  margin-right: calc((100% - 94px * 6) / 12);
+  margin-right: 2% \9;
+  margin-bottom: 40px;
+}
+.main .doc .sellItems ul br {
+  display: none;
+}
+.main .doc .sellItems ul br.break-6 {
+  display: block;
+  width: auto;
+}
+.main .doc .sellItems .group {
+  display: block;
+  width: 94px;
+  background-position: left top;
+  cursor: pointer;
+  position: relative;
+}
+.main .doc .sellItems .group strong {
+  display: block;
+  width: 94px;
+  height: 94px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.main .doc .sellItems .group span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: #313131;
+  line-height: 1.55;
+}
+.main .doc .sellItems label.group input {
+  display: none;
+  /*
+  position: absolute;
+  top: 0;
+  left: 0;
+  */
+}
+.main .doc .sellItems label.group.checked span {
+  color: #f7931e;
+}
+.main .doc .sellItems .group.senior strong {
+  background-image: url("../images/frame_curriculum_group_senior.gif");
+}
+.main .doc .sellItems .group.insdustry strong {
+  background-image: url("../images/frame_curriculum_group_insdustry.gif");
+}
+.main .doc .sellItems .group.junior strong {
+  background-image: url("../images/frame_curriculum_group_junior.gif");
+}
+.main .doc .sellItems .group.elementery strong {
+  background-image: url("../images/frame_curriculum_group_elementery.gif");
+}
+.main .doc .sellItems .group.license strong {
+  background-image: url("../images/frame_curriculum_group_license.gif");
+}
+.main .doc .sellItems .group.senior.checked strong,
+.main .doc .sellItems .group.insdustry.checked strong,
+.main .doc .sellItems .group.junior.checked strong,
+.main .doc .sellItems .group.elementery.checked strong,
+.main .doc .sellItems .group.license.checked strong,
+.main .doc .sellItems .group:hover strong {
+  background-position: left bottom;
+}
+.main .doc .sellItems a.group {
+  text-decoration: none;
+}
+.main .doc .sellItems a.group span {
+  text-decoration: none;
+}
+.main .doc .sellItems a.group:hover span {
+  color: #f7931e;
+  text-decoration: underline;
+}
+.main .doc .shoppingItems article,
+.main .doc .courseInfo dd article {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.main .doc .shoppingItems article strong,
+.main .doc .courseInfo dd article strong {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.main .doc .shoppingItems article span,
+.main .doc .courseInfo dd article span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  font-weight: bold;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .shoppingItems article.senior,
+.main .doc .shoppingItems article.insdustry,
+.main .doc .shoppingItems article.junior,
+.main .doc .shoppingItems article.elementery,
+.main .doc .shoppingItems article.license,
+.main .doc .courseInfo dd article.senior,
+.main .doc .courseInfo dd article.insdustry,
+.main .doc .courseInfo dd article.junior,
+.main .doc .courseInfo dd article.elementery,
+.main .doc .courseInfo dd article.license {
+  padding-left: 55px;
+}
+.main .doc .shoppingItems article.senior strong,
+.main .doc .courseInfo dd article.senior strong {
+  background-position: left top;
+}
+.main .doc .shoppingItems article.insdustry strong,
+.main .doc .courseInfo dd article.insdustry strong {
+  background-position: -40px top;
+}
+.main .doc .shoppingItems article.junior strong,
+.main .doc .courseInfo dd article.junior strong {
+  background-position: -80px top;
+}
+.main .doc .shoppingItems article.elementery strong,
+.main .doc .courseInfo dd article.elementery strong {
+  background-position: -120px top;
+}
+.main .doc .shoppingItems article.license strong,
+.main .doc .courseInfo dd article.license strong {
+  background-position: -160px top;
+}
+.main .doc .shoppingItems .features ul li,
+.main .doc .courseInfo dd .features ul li {
+  padding-left: 20px;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: left 5px;
+}
+.main .doc .shoppingItems .features ul li span,
+.main .doc .courseInfo dd .features ul li span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 1.55;
+}
+.main .doc .shoppingItems {
+  margin-bottom: 40px;
+}
+.main .doc .shoppingItems article {
+  background-color: #ffe8ce;
+}
+.main .doc .shoppingItems article a {
+  color: #313131;
+}
+.main .doc .shoppingItems article a:hover {
+  text-decoration: none;
+}
+.main .doc .shoppingItems article.senior strong,
+.main .doc .shoppingItems article.insdustry strong,
+.main .doc .shoppingItems article.junior strong,
+.main .doc .shoppingItems article.elementery strong,
+.main .doc .shoppingItems article.license strong {
+  background-image: url("../images/frame_curriculum_shopping_bg.gif");
+}
+.main .doc .shoppingItems .features {
+  padding-left: 5%;
+  padding-bottom: 40px;
+}
+.main .doc .shoppingItems .features ul .break-2 {
+  display: block;
+}
+.main .doc .shoppingItems .features ul li {
+  float: left;
+  width: calc(45% - 20px);
+  background-image: url("../images/frame_curriculum_arrow_01.gif");
+}
+.main .doc .courseInfo {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+}
+.main .doc .courseInfo > br {
+  display: block;
+}
+.main .doc .courseInfo dt {
+  float: left;
+  width: 20%;
+  height: 230px;
+}
+.main .doc .courseInfo dt figure {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+}
+.main .doc .courseInfo dd {
+  float: right;
+  width: 78%;
+}
+.main .doc .courseInfo dd article {
+  margin-bottom: 5px;
+}
+.main .doc .courseInfo dd article.senior strong,
+.main .doc .courseInfo dd article.insdustry strong,
+.main .doc .courseInfo dd article.junior strong,
+.main .doc .courseInfo dd article.elementery strong,
+.main .doc .courseInfo dd article.license strong {
+  background-image: url("../images/frame_curriculum_intro_bg.gif");
+}
+.main .doc .courseInfo dd .features ul li {
+  width: auto;
+  background-image: url("../images/frame_curriculum_arrow_02.gif");
+}
+.main .doc .courseInfo dd .intro {
+  width: 73%;
+}
+.main .doc .courseInfo dd .intro .socialShare > span,
+.main .doc .courseInfo dd .intro .socialShare a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main .doc .courseInfo dd .intro .socialShare a {
+  width: 31px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_curriculum_social_share.gif");
+}
+.main .doc .courseInfo dd .intro .socialShare a.facebook {
+  background-position: left top;
+}
+.main .doc .courseInfo dd .intro .socialShare a.line {
+  background-position: left -31px;
+}
+.main .doc .courseInfo dd .intro .socialShare a span {
+  display: none;
+}
+.main .doc .courseInfo dd .intro .socialShare.rwd {
+  display: none;
+}
+.main .doc .courseInfo dd .shopping {
+  width: 25%;
+}
+.main .doc .courseInfo dd .shopping ul {
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  border-left: #f7931e solid 3px;
+}
+.main .doc .courseInfo dd .shopping ul li {
+  padding-bottom: 15px;
+}
+.main .doc .courseInfo dd .shopping ul li div * {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  font-weight: normal;
+}
+.main .doc .courseInfo dd .shopping ul li div.money.discounted span,
+.main .doc .courseInfo dd .shopping ul li div.money.discounted strong,
+.main .doc .courseInfo dd .shopping ul li div.points.discounted span,
+.main .doc .courseInfo dd .shopping ul li div.points.discounted strong {
+  color: #ff0000;
+}
+.main .doc .courseInfo dd .shopping ul li div.money.discounted span,
+.main .doc .courseInfo dd .shopping ul li div.points.discounted span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main .doc .courseInfo dd .shopping ul li.erased div span,
+.main .doc .courseInfo dd .shopping ul li.erased div strong {
+  text-decoration: line-through;
+}
+.main .doc .courseInfo dd .shopping ul li:last-child {
+  padding-bottom: 0px;
+}
+.main .doc .courseInfo dd .shopping button {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,小標題*/
+  font-size: 112.2%;
+  height: 50px;
+  cursor: pointer;
+  padding: 0 45px;
+  color: #fff;
+  background-color: #e27a00;
+}
+.main .doc .toBuy {
+  text-align: right;
+}
+.main .doc .shoppingInfo {
+  position: relative;
+  padding-top: 47px;
+}
+.main .doc .shoppingInfo dt.open,
+.main .doc .shoppingInfo dd.open {
+  display: block;
+  background-color: #f6f6f6;
+}
+.main .doc .shoppingInfo dd {
+  display: none;
+}
+.main .doc .shoppingInfo dt {
+  position: absolute;
+  top: 0;
+  width: 12%;
+}
+.main .doc .shoppingInfo dt button {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  width: 100%;
+  cursor: pointer;
+  border-top: #fff solid 3px;
+  color: #000;
+  height: 47px;
+}
+.main .doc .shoppingInfo dt.open button {
+  border-top: #f7931e solid 3px;
+  font-weight: bold;
+  color: #f7931e;
+}
+.main .doc .shoppingInfo dt.inLeft {
+  left: 0;
+}
+.main .doc .shoppingInfo dt.inRight {
+  left: 12%;
+}
+.main .doc .shoppingInfo dd h4 {
+  padding: 20px 0;
+  margin-left: 15px;
+}
+.main .doc .shoppingInfo dd h4 span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding-left: 10px;
+  border-left: #f7931e solid 3px;
+}
+.main .doc .shoppingInfo dd .text {
+  padding: 25px;
+  line-height: 1.55;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.price {
+  width: 18%;
+}
+.main .doc .contentTable .pd.actions {
+  width: 7%;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button {
+  margin-bottom: 20px;
+  margin-left: 0px;
+}

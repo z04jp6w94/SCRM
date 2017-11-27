@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+/* 會員表格共用 begin */
+.main .pageOnly-width-330,
+.main .pageOnly-width-440,
+.main .pageOnly-width-570,
+.main .pageOnly-width-680,
+.main .pageOnly-width-990 {
+  width: auto;
+}
+.main .inLeft,
+.main .inRight {
+  float: none;
+  width: auto;
+}
+.main .inLeft.shift,
+.main .inRight.shift {
+  padding: 0;
+}
+.main .inRight {
+  margin-bottom: 70px;
+}
+.main .doc .registering .sheet tr,
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  display: block;
+  float: none;
+}
+.main .doc .registering .sheet th:before,
+.main .doc .registering .sheet td:before {
+  display: none;
+}
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet td span,
+.main .doc .registering .sheet .textType,
+.main .doc .registering .sheet img {
+  display: inline;
+  vertical-align: inherit;
+}
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  width: auto;
+}
+.main .doc .registering .sheet td {
+  margin-bottom: 15px;
+}
+.main .doc .registering .sheet td .error {
+  position: static;
+}
+.main .doc .registering .sheet td .error.open {
+  display: block;
+}
+
+/* 會員表格共用 end */
+.main .doc .registering h3 span {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+.main .doc .registering .securityCode {
+  margin-top: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.main .doc .registering .textType.security {
+  width: calc(98% - 5px - 5px);
+}
+.main .doc .registering .spLine {
+  position: static;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 70px;
+}
+.main .doc .registering .textPart.accept .error {
+  position: static;
+  top: 0;
+}
+.main .doc .registering .textPart.accept .error.open {
+  display: block;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 會員表格共用 begin */
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .inLeft {
+    float: left;
+    width: 40%;
+  }
+  .main .inLeft.shift {
+    padding: 0 5%;
+  }
+  .main .inRight {
+    float: right;
+    width: 40%;
+  }
+  .main .inRight.shift {
+    padding: 0 5%;
+  }
+  .main .doc .registering .sheet tr {
+    display: table-row;
+  }
+  .main .doc .registering .sheet th,
+  .main .doc .registering .sheet td {
+    display: table-cell;
+  }
+  .main .doc .registering .sheet td {
+    width: 65%;
+  }
+}
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .pageOnly-width-330 {
+    width: 32.22656%;
+  }
+  .main .pageOnly-width-440 {
+    width: 42.96875%;
+  }
+  .main .pageOnly-width-570 {
+    width: 55.66406%;
+  }
+  .main .pageOnly-width-680 {
+    width: 66.40625%;
+  }
+}
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .pageOnly-width-330 {
+    width: 42.96875%;
+  }
+  .main .pageOnly-width-440 {
+    width: 57.29167%;
+  }
+  .main .pageOnly-width-570 {
+    width: 74.21875%;
+  }
+  .main .pageOnly-width-680 {
+    width: 88.54167%;
+  }
+}
+/* 會員表格共用 end */
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .registering .spLine {
+    position: absolute;
+    left: calc(50% - 0.5px);
+    top: 50px;
+    bottom: 0;
+    width: 1px;
+    height: auto;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

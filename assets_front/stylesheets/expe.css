@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .search:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .search button,
+.main .doc .search select {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .search button,
+.main .doc .search select {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main h3.subTitle {
+  margin-bottom: 25px;
+  background-color: #ffe8ce;
+  text-align: center;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding: 13px 0px;
+  padding-left: 50px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_expe_title_bg.gif");
+}
+.main .doc .search {
+  margin-bottom: 25px;
+}
+.main .doc .search button,
+.main .doc .search select {
+  height: 50px;
+}
+.main .doc .search select {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  background-color: #ffe8ce;
+  border: #f7931e solid 1px;
+  padding: 12px 15px;
+  padding-right: 45px;
+  width: 28%;
+  /*max-width: 400px;*/
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../images/frame_curriculum_select_arrow.gif");
+  background-image: none\9\0;
+  /*IE 9*/
+}
+.main .doc .search select::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+.main .doc .search select:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+.main .doc .search select option {
+  background-color: #ffe8ce;
+}
+.main .doc .search select option:checked {
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .search .searchBtn {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  margin-right: 0;
+  cursor: pointer;
+  width: 14%;
+  padding: 0;
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .expList {
+  background-color: #f4f4f4;
+}
+.main .doc .expList ul {
+  padding: 30px 10px;
+}
+.main .doc .expList ul > br {
+  display: none;
+  width: 100%;
+}
+.main .doc .expList ul .break-6 {
+  display: block;
+}
+.main .doc .expList ul li {
+  float: left;
+  width: 15.5%;
+  margin-right: 0.5%;
+  margin-left: 0.6%;
+  margin-bottom: 15px;
+}
+.main .doc .expList ul li a,
+.main .doc .expList ul li a > * {
+  display: block;
+}
+.main .doc .expList ul li a {
+  color: #313131;
+}
+.main .doc .expList ul li a:hover {
+  color: #f7931e;
+}
+.main .doc .expList ul li a strong {
+  position: relative;
+  height: 95px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.main .doc .expList ul li a strong .play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20%;
+  background-image: url("../images/frame_easy_showcase_contentbrief_play.png");
+}
+.main .doc .expList ul li a span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 1.55;
+  padding: 0 5px;
+  height: 48px;
+  text-align: left;
+  overflow: hidden;
+}
+.main .doc .expList .noItem {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  display: none;
+  padding: 30px 10px;
+  line-height: 1.55;
+  text-align: center;
+}
+.main .doc .final {
+  padding: 45px 0;
+  text-align: center;
+}
+.main .doc .final button {
+  background-color: #7d7d7d;
+  color: #fff;
+}
+.main .doc .final button span {
+  display: inline-block;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/frame_expe_arrow_01.png");
+}

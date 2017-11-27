@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main h3.subTitle:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main h3.subTitle > span, .main h3.subTitle > a {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .faqTab ul li h3 button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main h3.subTitle {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+.main h3.subTitle > span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main h3.subTitle > a {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0px 15px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 30px;
+  background-color: #f7931e;
+  color: #fff;
+  text-decoration: none;
+}
+.main h3.subTitle > a span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  font-weight: normal;
+}
+.main .doc .faqTab ul li {
+  margin-top: 15px;
+  margin-right: 10px;
+  float: left;
+}
+.main .doc .faqTab ul li:last-child {
+  margin-right: 0;
+}
+.main .doc .faqTab ul li.more {
+  display: none;
+}
+.main .doc .faqTab ul li.more select {
+  height: 36px;
+  /*內文,小標題*/
+  font-size: 112.2%;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  background-color: #ffe8ce;
+  border: #f7931e solid 1px;
+  padding: 2px 5px;
+  padding-right: 45px;
+  width: 5em;
+  /*max-width: 400px;*/
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../images/frame_curriculum_select_arrow.gif");
+  background-image: none\9\0;
+  /*IE 9*/
+}
+.main .doc .faqTab select::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+.main .doc .faqTab select:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+.main .doc .faqTab select option {
+  background-color: #ffe8ce;
+}
+.main .doc .faqTab select option:checked {
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .faqTab ul li h3 > span,
+.main .doc .faqTab ul li h3 button {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  background-color: #eeeeee;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  color: #313131;
+}
+.main .doc .faqTab ul li h3 > span {
+  font-weight: normal;
+  display: none;
+}
+.main .doc .faqTab ul li h3 button {
+  padding: 17px 15px;
+  cursor: pointer;
+}
+.main .doc .faqTab ul li.open h3 > span,
+.main .doc .faqTab ul li.open h3 button,
+.main .doc .faqTab ul li:hover h3 button {
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .faqTab ul li h3 button > span {
+  font-weight: normal;
+}
+.main .doc .faqTab .clearFloat {
+  border-top: #eeeeee solid 1px;
+}
+.main .doc .faqList {
+  margin-top: 30px;
+}
+.main .doc .faqList dl {
+  display: none;
+}
+.main .doc .faqList dl.open {
+  display: block;
+}
+.main .doc .faqList dl dt {
+  margin-bottom: 15px;
+}
+.main .doc .faqList dl dt.open {
+  margin-bottom: 0px;
+}
+.main .doc .faqList dl dt a {
+  display: block;
+  padding: 15px 0;
+  padding-left: 60px;
+  text-decoration: none;
+  color: #313131;
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  background-image: url("../images/frame_easy_faq_arrow_open.gif");
+}
+.main .doc .faqList dl dt a span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.main .doc .faqList dl dt a:hover,
+.main .doc .faqList dl dt.open a {
+  background-color: #ffe8ce;
+}
+.main .doc .faqList dl dt.open a {
+  background-image: url("../images/frame_easy_faq_arrow_close.gif");
+}
+.main .doc .faqList dl dd {
+  display: none;
+  margin-bottom: 0px;
+}
+.main .doc .faqList dl dd.open {
+  display: block;
+  margin-bottom: 15px;
+}
+.main .doc .faqList dl dd .text {
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+}
+.main .doc .faqList dl dd p {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.55;
+  margin-bottom: 25px;
+  color: #535353;
+}
+.main .doc .faqList dl dd img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.main .doc .faqList dl dd table {
+  border-color: grey;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.main .doc .faqList dl dd table th,
+.main .doc .faqList dl dd table td {
+  vertical-align: middle;
+}
+.main .doc .more a {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+.main .doc .more a span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}

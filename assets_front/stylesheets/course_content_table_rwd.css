@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main .doc .contentTable table,
+.main .doc .contentTable thead,
+.main .doc .contentTable tbody,
+.main .doc .contentTable tr,
+.main .doc .contentTable th,
+.main .doc .contentTable td {
+  display: block;
+  float: none;
+  border: none;
+}
+.main .doc .contentTable tbody tr {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: #dcdcdc solid 1px;
+}
+.main .doc .contentTable tbody tr:last-child {
+  border: none;
+}
+.main .doc .contentTable thead tr th {
+  display: none;
+}
+.main .doc .contentTable thead tr .hd.name {
+  display: block;
+}
+.main .doc .contentTable td {
+  padding: 7px 10px;
+}
+.main .doc .contentTable .pd strong,
+.main .doc .contentTable .pd span {
+  font-weight: bold;
+}
+.main .doc .contentTable .pd > br {
+  display: inline-block;
+}
+.main .doc .contentTable .pd > strong,
+.main .doc .contentTable .pd .secondary {
+  display: inline;
+}
+.main .doc .contentTable .pd.name,
+.main .doc .contentTable .pd.crew,
+.main .doc .contentTable .pd.importDate,
+.main .doc .contentTable .pd.expiredDate,
+.main .doc .contentTable .pd.units,
+.main .doc .contentTable .pd.price,
+.main .doc .contentTable .pd.points,
+.main .doc .contentTable .pd.actions {
+  width: calc(100% - 10px - 10px);
+}
+.main .doc .contentTable .pd.name a {
+  text-decoration: underline;
+}
+.main .doc .contentTable .pd.name span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  line-height: 1.75;
+}
+.main .doc .contentTable .pd.crew {
+  width: calc(40% - 10px - 10px);
+  margin-bottom: 5px;
+}
+.main .doc .contentTable .pd.price {
+  width: calc(55% - 10px - 10px);
+}
+.main .doc .contentTable .pd.crew {
+  float: left;
+}
+.main .doc .contentTable .pd.crew a {
+  text-decoration: underline;
+}
+.main .doc .contentTable .pd.price {
+  float: right;
+}
+.main .doc .contentTable .pd.price strong.secondary,
+.main .doc .contentTable .pd.price span.secondary {
+  display: inline;
+  color: #313131;
+}
+.main .doc .contentTable .pd.price strong.secondary.special,
+.main .doc .contentTable .pd.price span.secondary.special {
+  color: #ff0000;
+}
+.main .doc .contentTable .pd.price .show {
+  display: inline-block;
+}
+.main .doc .contentTable .pd.units,
+.main .doc .contentTable .pd.points {
+  display: none;
+}
+.main .doc .contentTable .pd.actions {
+  clear: both;
+  float: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+}
+.main .doc .contentTable .pd.actions > br {
+  display: none;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button {
+  margin-right: 0;
+  margin-left: 15px;
+  text-align: center;
+  /*padding-top: 32px;*/
+  /*width: 100px;
+  border: #000 solid 1px;*/
+}
+
+.main {
+  /* 重設hover 效果 */
+}
+.main .doc .contentTable tr {
+  position: relative;
+}
+.main .doc .contentTable tr:hover {
+  background: none;
+}
+.main .doc .contentTable tr:hover .pd.actions .goStudy strong {
+  background-position: center -128px;
+}
+.main .doc .contentTable tr:hover .pd.actions .ntdBuy strong {
+  background-position: center -32px;
+}
+.main .doc .contentTable tr:hover .pd.actions .video strong {
+  background-position: center top;
+}
+.main .doc .contentTable tr:hover .pd.actions .setToBuy strong {
+  background-position: center -32px;
+}
+.main .doc .contentTable tr:hover .pd.actions .setToBuy.checked strong {
+  background-position: center -192px;
+}
+.main .doc .contentTable tr:hover .pd.actions .pointBuy strong {
+  background-position: center -64px;
+}
+.main .doc .contentTable tr:hover .pd.actions .removeItem strong {
+  background-position: center -96px;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .contentTable tbody tr {
+    position: relative;
+    min-height: 150px;
+  }
+  .main .doc .contentTable td {
+    padding: 7px 15px;
+  }
+  .main .doc .contentTable .pd.name {
+    width: 70%;
+    /*border-bottom: #bdbdbd dashed 1px;*/
+  }
+  .main .doc .contentTable .pd.name a {
+    /*text-decoration: none;*/
+  }
+  .main .doc .contentTable .pd.crew,
+  .main .doc .contentTable .pd.price {
+    float: none;
+    display: inline-block;
+    width: calc(35% - 15px - 15px);
+  }
+  .main .doc .contentTable .pd.actions {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 16%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: right;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: 30%;
+    max-width: auto;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    /*內文,標準尺寸*/
+    font-size: 102%;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .contentTable tbody tr {
+    position: relative;
+    min-height: inherit;
+  }
+  .main .doc .contentTable td {
+    padding: 7px 15px;
+  }
+  .main .doc .contentTable .pd.name {
+    width: 70%;
+  }
+  .main .doc .contentTable .pd.crew,
+  .main .doc .contentTable .pd.price {
+    float: none;
+    display: inline-block;
+    width: calc(35% - 15px - 15px);
+  }
+  .main .doc .contentTable .pd.actions {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 25%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: right;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: inherit;
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

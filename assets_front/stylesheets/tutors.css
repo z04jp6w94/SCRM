@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .teacherTable .teachersType li a:before, .main .doc .teacherDetail:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .teacherTable .teachersType li a span, .main .doc .teacherDetail > dt,
+.main .doc .teacherDetail > dd {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .teacherDetail .spec > dt button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main {
+  /* 師資列表 begin */
+  /* 師資列表 end */
+  /* 師資介紹 begin */
+  /* 師資介紹 end */
+}
+.main .wrapper .doc .master {
+  float: right;
+  width: 85.5%;
+}
+.main .wrapper .doc .sideColumn {
+  display: block;
+  float: left;
+  width: 13%;
+}
+.main h3.subTitle {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+  padding-left: 17px;
+  background-color: #ffe8ce;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .teacherTable .teachersType {
+  margin-bottom: 10px;
+}
+.main .doc .teacherTable .teachersType li {
+  float: left;
+  margin-right: 1.25%;
+  width: 19%;
+}
+.main .doc .teacherTable .teachersType li:last-child {
+  margin-right: 0;
+}
+.main .doc .teacherTable .teachersType li a {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+.main .doc .teacherTable .teachersType li a:hover,
+.main .doc .teacherTable .teachersType li a.current {
+  background-color: #f7931e;
+}
+.main .doc .teacherTable .teachersType li a span {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  padding-left: 40px;
+  color: #313131;
+  line-height: 34px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_tutors_teacher_type.png");
+}
+.main .doc .teacherTable .teachersType li a.senior span {
+  background-position: left top;
+}
+.main .doc .teacherTable .teachersType li a.insdustry span {
+  background-position: left -34px;
+}
+.main .doc .teacherTable .teachersType li a.junior span {
+  background-position: left -68px;
+}
+.main .doc .teacherTable .teachersType li a.elementery span {
+  background-position: left -102px;
+}
+.main .doc .teacherTable .teachersType li a.license span {
+  background-position: left -136px;
+}
+.main .doc .teacherTable .teachersType li a:hover span,
+.main .doc .teacherTable .teachersType li a.current span {
+  color: #fff;
+}
+.main .doc .teacherTable .teachers {
+  margin: 10px 0;
+}
+.main .doc .teacherTable .teachers li {
+  float: left;
+  margin-right: 1.25%;
+  margin-bottom: 15px;
+  width: 19%;
+}
+.main .doc .teacherTable .teachers li:nth-child(5n) {
+  margin-right: 0;
+}
+.main .doc .teacherTable .teachers li a {
+  display: block;
+  position: relative;
+  height: 330px;
+  color: #313131;
+  background-color: #f6f6f6;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_tutors_teacher_footer.gif");
+  text-decoration: none;
+}
+.main .doc .teacherTable .teachers li a > br {
+  display: none;
+}
+.main .doc .teacherTable .teachers li a figure,
+.main .doc .teacherTable .teachers li a figure figcaption span,
+.main .doc .teacherTable .teachers li a .name,
+.main .doc .teacherTable .teachers li a .desc,
+.main .doc .teacherTable .teachers li a .btn {
+  display: inline-block;
+}
+.main .doc .teacherTable .teachers li a .pointer,
+.main .doc .teacherTable .teachers li a figure figcaption,
+.main .doc .teacherTable .teachers li a .name,
+.main .doc .teacherTable .teachers li a .desc,
+.main .doc .teacherTable .teachers li a .btn {
+  position: absolute;
+}
+.main .doc .teacherTable .teachers li a figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+.main .doc .teacherTable .teachers li a figure figcaption {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_tutors_teacher_arrow.png");
+}
+.main .doc .teacherTable .teachers li a figure figcaption span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  margin-left: 6px;
+  margin-top: 8px;
+  width: 46px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+}
+.main .doc .teacherTable .teachers li a .pointer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url("../images/frame_tutors_teacher_pointer.png");
+  z-index: 2;
+}
+.main .doc .teacherTable .teachers li a .name {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  top: 57.57576%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  font-weight: normal;
+  text-align: center;
+}
+.main .doc .teacherTable .teachers li a .name span {
+  display: inline-block;
+  padding: 0 2px;
+  padding-bottom: 5px;
+  line-height: 1.55;
+  max-height: 20px;
+  overflow: hidden;
+  border-bottom: #313131 solid 2px;
+}
+.main .doc .teacherTable .teachers li a .desc {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  top: 68.18182%;
+  left: 10%;
+  right: 10%;
+  height: 48px;
+  text-align: center;
+  line-height: 1.55;
+  overflow: hidden;
+}
+.main .doc .teacherTable .teachers li a .btn {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  top: 84.84848%;
+  left: 10%;
+  right: 10%;
+  padding: 10px 0;
+  border: #f7931e solid 1px;
+  text-align: center;
+  font-weight: normal;
+  color: #f7931e;
+}
+.main .doc .teacherTable .teachers li a .btn span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .teacherTable .teachers li a:hover figcaption {
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-repeat: repeat;
+  background-image: url("../images/frame_tutors_teacher_bg.png");
+}
+.main .doc .teacherTable .teachers li a:hover figcaption span {
+  margin: 0;
+  padding: 8px 6px;
+  width: auto;
+  /*color: #313131;*/
+  white-space: pre-wrap;
+  text-overflow: normal;
+  overflow: visible;
+}
+.main .doc .teacherTable .teachers li a:hover .btn {
+  background-color: #f7931e;
+}
+.main .doc .teacherTable .teachers li a:hover .btn span {
+  color: #fff;
+}
+.main .doc .teacherDetail > dt {
+  position: relative;
+  width: 56%;
+  min-height: 330px;
+}
+.main .doc .teacherDetail > dd {
+  width: 40.5%;
+}
+.main .doc .teacherDetail {
+  margin-bottom: 50px;
+  background-color: #f6f6f6;
+}
+.main .doc .teacherDetail .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.main .doc .teacherDetail .icon figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main .doc .teacherDetail .icon figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_tutors_teacher_arrow.png");
+}
+.main .doc .teacherDetail .icon figure figcaption span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 8px;
+  width: 46px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+}
+.main .doc .teacherDetail .icon:hover figure figcaption {
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-repeat: repeat;
+  background-image: url("../images/frame_tutors_teacher_bg.png");
+}
+.main .doc .teacherDetail .icon:hover figure figcaption span {
+  margin: 0;
+  padding: 8px 6px;
+  width: auto;
+  /*color: #313131;*/
+  white-space: pre-wrap;
+  text-overflow: normal;
+  overflow: visible;
+}
+.main .doc .teacherDetail .spec {
+  position: relative;
+  margin-left: 50%;
+  padding-top: 55px;
+  width: 50%;
+}
+.main .doc .teacherDetail .spec > dt {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 50px;
+}
+.main .doc .teacherDetail .spec > dt button {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  border-top: #f6f6f6 solid 5px;
+  cursor: pointer;
+}
+.main .doc .teacherDetail .spec > dt button span {
+  color: #313131;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .teacherDetail .spec > dt.open button {
+  border-top: #f7931e solid 5px;
+}
+.main .doc .teacherDetail .spec > dt.inLeft {
+  left: 0;
+}
+.main .doc .teacherDetail .spec > dt.inRight {
+  left: 50%;
+}
+.main .doc .teacherDetail .spec > dd {
+  display: none;
+  padding: 0 20px;
+  padding-bottom: 25px;
+}
+.main .doc .teacherDetail .spec > dd .name {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-left: 13px;
+  font-weight: normal;
+  color: #313131;
+}
+.main .doc .teacherDetail .spec > dd .name span {
+  display: inline-block;
+  line-height: 1.55;
+  border-bottom: #313131 solid 2px;
+}
+.main .doc .teacherDetail .spec > dd ul li {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  color: #434343;
+  margin-bottom: 5px;
+  padding-left: 12px;
+  line-height: 1.55;
+  background-repeat: no-repeat;
+  background-position: left 7px;
+  background-image: url("../images/frame_tutors_teacher_detail_dart.png");
+}
+.main .doc .teacherDetail .spec > dd.open {
+  display: block;
+}
+.main .doc .teacherDetail h4 {
+  display: none;
+}
+.main .doc .teacherDetail .sample {
+  /*https://avexdesigns.com/responsive-youtube-embed/*/
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.main .doc .teacherDetail .sample iframe,
+.main .doc .teacherDetail .sample object,
+.main .doc .teacherDetail .sample embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .sideColumn h3 {
+  padding: 10px 0px;
+  padding-left: 17px;
+  background-color: #f6f6f6;
+  font-weight: normal;
+  text-align: center;
+}
+.main .doc .sideColumn h3 span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: inline-block;
+  margin-left: -15px;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .sideColumn .groups li a {
+  display: block;
+  padding: 12px 0px;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  text-align: center;
+}
+.main .doc .sideColumn .groups li a span {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  color: #313131;
+}
+.main .doc .sideColumn .groups li a:hover,
+.main .doc .sideColumn .groups li a.current {
+  background-color: #f7931e;
+}
+.main .doc .sideColumn .groups li a:hover span,
+.main .doc .sideColumn .groups li a.current span {
+  color: #fff;
+}

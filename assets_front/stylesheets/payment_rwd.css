@@ -1,0 +1,710 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main h3.subTitle span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .paySteps ol {
+  display: block;
+  padding: 20px 0;
+}
+.main .doc .paySteps ol li {
+  float: none;
+  display: block;
+  padding-right: 0;
+  background: none;
+}
+@media only screen and (orientation: portrait) {
+  .main .doc .paySteps {
+    /*直向*/
+  }
+  .main .doc .paySteps ol li strong {
+    background-size: contain;
+    height: 85vw;
+  }
+  .main .doc .paySteps ol li.sp1.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_01_vec.gif");
+  }
+  .main .doc .paySteps ol li.sp2.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_02_vec.gif");
+  }
+  .main .doc .paySteps ol li.sp3.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_03_vec.gif");
+  }
+  .main .doc .paySteps ol li.sp5.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_05_vec.gif");
+  }
+  .main .doc .paySteps ol li.sp1 strong,
+  .main .doc .paySteps ol li.sp2 strong,
+  .main .doc .paySteps ol li.sp3 strong,
+  .main .doc .paySteps ol li.sp4 strong,
+  .main .doc .paySteps ol li.sp5 strong {
+    width: 100%;
+    display: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .paySteps {
+    /*橫向*/
+  }
+  .main .doc .paySteps ol li strong {
+    height: 40vw;
+  }
+  .main .doc .paySteps ol li.sp1.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_01.gif");
+  }
+  .main .doc .paySteps ol li.sp2.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_02.gif");
+  }
+  .main .doc .paySteps ol li.sp3.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_03.gif");
+  }
+  .main .doc .paySteps ol li.sp5.current strong {
+    display: block;
+    background-image: url("../images/frame_payment_step_rwd_05.gif");
+  }
+  .main .doc .paySteps ol li.sp1 strong,
+  .main .doc .paySteps ol li.sp2 strong,
+  .main .doc .paySteps ol li.sp3 strong,
+  .main .doc .paySteps ol li.sp4 strong,
+  .main .doc .paySteps ol li.sp5 strong {
+    width: 100%;
+    display: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.main .doc .contentTable {
+  /*.pd.set,
+  .pd.price,
+  .pd.actions{
+  	display: block;
+  	width: auto;
+  }*/
+}
+.main .doc .contentTable tr.theSet,
+.main .doc .contentTable tr.theSet td {
+  background-color: #ffe8ce;
+}
+.main .doc .contentTable tr:hover {
+  background: none;
+}
+.main .doc .contentTable tr.theSet:hover,
+.main .doc .contentTable tr.theSet:hover td {
+  background: #ffe8ce;
+}
+.main .doc .contentTable tr.theSet {
+  position: relative;
+}
+.main .doc .contentTable tr.theSet .pd.price {
+  float: left;
+  width: auto;
+}
+.main .doc .contentTable tr.theSet .pd.price br.show {
+  display: none;
+}
+.main .doc .contentTable tr.theSet .pd.price strong.special,
+.main .doc .contentTable tr.theSet .pd.price strong.secondary.special {
+  padding-left: 15px;
+}
+.main .doc .contentTable tr.theSetChildren .pd.price,
+.main .doc .contentTable tr.theSetChildren .pd.points,
+.main .doc .contentTable tr.theSetChildren .pd.actions {
+  display: none;
+}
+.main .doc .contentTable tr.theSetChildren .pd.actions {
+  padding: 1px 0;
+}
+.main .doc .contentTable tr.theSetChildren .pd.name,
+.main .doc .contentTable tr.theSetChildren .pd.crew {
+  padding-left: 45px;
+  width: calc(100% - 35px - 10px);
+}
+.main .doc .contentTable tr.theSetChildren .pd.name {
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  background-image: url("../images/frame_payment_set_children_bg.gif");
+}
+.main .doc .contentTable tr.theSetChildren .pd.crew {
+  float: none;
+}
+.main .doc .contentTable tr.theSetChildren .pd.crew br {
+  display: none;
+}
+.main .doc .contentTable tr.theSetChildren .pd.crew a,
+.main .doc .contentTable tr.theSetChildren .pd.crew strong,
+.main .doc .contentTable tr.theSetChildren .pd.crew span {
+  display: inline-block;
+}
+.main .doc .contentTable tbody tr {
+  min-height: inherit;
+  margin-bottom: 0;
+}
+.main .doc .contentTable tr.theSet .pd.actions {
+  padding: 0;
+  margin: 0;
+  width: 1px;
+}
+.main .doc .contentTable tr.theSet .pd.actions .removeItem {
+  margin-left: 0;
+  min-width: inherit;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 45px;
+}
+.main .doc .contentTable .pd.set {
+  display: block;
+  padding-right: 75px;
+  padding-top: 25px;
+}
+.main .doc .contentTable .pd.set strong,
+.main .doc .contentTable .pd.set span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main .doc .contentTable .pd.name strong,
+.main .doc .contentTable .pd.name span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .contentTable .pd.price,
+.main .doc .contentTable .pd.actions {
+  display: block;
+  width: auto;
+}
+.main .doc .morePoints {
+  margin-bottom: 60px;
+}
+.main .doc .morePoints .box {
+  margin-top: -25px;
+  display: block;
+}
+.main .doc .morePoints .box tbody,
+.main .doc .morePoints .box tr,
+.main .doc .morePoints .box td {
+  display: block;
+  width: 100%;
+}
+.main .doc .morePoints .box td {
+  padding: 0;
+  clear: both;
+  width: 100%;
+  text-align: right;
+}
+.main .doc .morePoints .box td strong {
+  display: inline-block;
+}
+.main .doc .morePoints .box .pd span {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  line-height: 1.8;
+}
+.main .doc .morePoints .box .pd {
+  padding: 7px 0;
+  float: left;
+  clear: none;
+  width: 50%;
+  text-align: center;
+}
+.main .doc .morePoints .box .pd.points,
+.main .doc .morePoints .box .pd.cash {
+  text-align: center;
+}
+.main .doc .morePoints .box .toBuy {
+  margin-bottom: 0;
+}
+.main .doc .morePoints .box .toBuy button {
+  height: 40px;
+}
+.main .doc .counting {
+  text-align: right;
+  border-top: #a0a0a0 solid 3px;
+}
+.main .doc .counting .secondary {
+  display: inline-block;
+}
+.main .doc .counting .total,
+.main .doc .counting .pay {
+  width: 100%;
+}
+.main .doc .counting .total br,
+.main .doc .counting .pay br {
+  display: inline-block;
+}
+.main .doc .counting .total .secondary,
+.main .doc .counting .pay .secondary {
+  display: inline;
+}
+.main .doc .counting .total th,
+.main .doc .counting .pay th {
+  width: auto;
+}
+.main .doc .counting .total th strong,
+.main .doc .counting .total .cash,
+.main .doc .counting .total .points,
+.main .doc .counting .pay th strong,
+.main .doc .counting .pay .cash,
+.main .doc .counting .pay .points {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.main .doc .counting .total td,
+.main .doc .counting .pay td {
+  text-align: right;
+  padding-left: 15px;
+}
+.main .doc .counting .total .cash,
+.main .doc .counting .total .points,
+.main .doc .counting .pay .cash,
+.main .doc .counting .pay .points {
+  width: auto;
+}
+.main .doc .counting .total th,
+.main .doc .counting .pay th {
+  width: 8em;
+  vertical-align: middle;
+}
+.main .doc .counting .total th strong,
+.main .doc .counting .total td span,
+.main .doc .counting .pay th strong,
+.main .doc .counting .pay td span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.8;
+}
+.main .doc .counting .total th strong {
+  /*display: none;*/
+}
+.main .doc .counting .total th *:nth-child(1),
+.main .doc .counting .total th *:nth-child(2) {
+  /*display: none;*/
+}
+.main .doc .counting .pay th strong,
+.main .doc .counting .pay td span {
+  /*font-weight: bold;*/
+}
+.main .doc .tradeFinish .status p {
+  padding: 0 15px;
+  text-align: left;
+}
+.main .doc .toBuy:before {
+  display: none;
+}
+.main .doc .toBuy {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.main .doc .toBuy.pointsOnly:before {
+  display: none;
+}
+.main .doc .toBuy.pointsOnly {
+  height: auto;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  position: static;
+  text-align: right;
+}
+.main .doc .toBuy.pointsOnly .points {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  position: static;
+  top: auto;
+  right: auto;
+  width: auto;
+}
+.main .doc .final {
+  text-align: center;
+}
+.main .doc .final .nextBtn,
+.main .doc .final .prevBtn {
+  padding: 0 45px;
+}
+
+/* 會員表格共用 begin */
+.main .pageOnly-width-330,
+.main .pageOnly-width-440,
+.main .pageOnly-width-570,
+.main .pageOnly-width-680,
+.main .pageOnly-width-990 {
+  width: auto;
+}
+.main .inLeft,
+.main .inRight {
+  float: none;
+  width: auto;
+}
+.main .inLeft.shift,
+.main .inRight.shift {
+  padding: 0;
+}
+.main .inRight {
+  margin-bottom: 70px;
+}
+.main .doc .registering .sheet tr,
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  display: block;
+  float: none;
+}
+.main .doc .registering .sheet th:before,
+.main .doc .registering .sheet td:before {
+  display: none;
+}
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet td span,
+.main .doc .registering .sheet .textType,
+.main .doc .registering .sheet img {
+  display: inline;
+  vertical-align: inherit;
+}
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  width: auto;
+}
+.main .doc .registering .sheet td {
+  margin-bottom: 15px;
+}
+.main .doc .registering .sheet td .error {
+  position: static;
+}
+.main .doc .registering .sheet td .error.open {
+  display: block;
+}
+
+/* 會員表格共用 end */
+.main .doc .registering .securityCode {
+  margin-top: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.main .doc .registering .textType.security {
+  width: calc(98% - 5px - 5px);
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 會員表格共用 begin */
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .inLeft {
+    float: left;
+    width: 40%;
+  }
+  .main .inLeft.shift {
+    padding: 0 5%;
+  }
+  .main .inRight {
+    float: right;
+    width: 40%;
+  }
+  .main .inRight.shift {
+    padding: 0 5%;
+  }
+  .main .doc .registering .sheet tr {
+    display: table-row;
+  }
+  .main .doc .registering .sheet th,
+  .main .doc .registering .sheet td {
+    display: table-cell;
+  }
+  .main .doc .registering .sheet td {
+    width: 65%;
+  }
+}
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .pageOnly-width-330 {
+    width: 32.22656%;
+  }
+  .main .pageOnly-width-440 {
+    width: 42.96875%;
+  }
+  .main .pageOnly-width-570 {
+    width: 55.66406%;
+  }
+  .main .pageOnly-width-680 {
+    width: 66.40625%;
+  }
+}
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .pageOnly-width-330 {
+    width: 42.96875%;
+  }
+  .main .pageOnly-width-440 {
+    width: 57.29167%;
+  }
+  .main .pageOnly-width-570 {
+    width: 74.21875%;
+  }
+  .main .pageOnly-width-680 {
+    width: 88.54167%;
+  }
+}
+/* 會員表格共用 end */
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .paySteps {
+    text-align: center;
+  }
+  .main .doc .paySteps ol {
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: inline-block;
+    list-style: none;
+  }
+  .main .doc .paySteps ol li {
+    float: left;
+    padding-right: 80px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("../images/frame_payment_step_arrow.gif");
+  }
+  .main .doc .paySteps ol li:last-child {
+    padding-right: 0;
+  }
+  .main .doc .paySteps ol li strong {
+    display: block;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+  .main .doc .paySteps ol li strong span {
+    display: none;
+  }
+  .main .doc .paySteps ol li.sp1 strong,
+  .main .doc .paySteps ol li.sp2 strong,
+  .main .doc .paySteps ol li.sp3 strong,
+  .main .doc .paySteps ol li.sp4 strong,
+  .main .doc .paySteps ol li.sp5 strong {
+    display: block;
+    background-position: left top;
+  }
+  .main .doc .paySteps ol li.sp1 strong,
+  .main .doc .paySteps ol li.sp1.current strong {
+    width: 154px;
+    background-image: url("../images/frame_payment_step_01.gif");
+  }
+  .main .doc .paySteps ol li.sp2 strong,
+  .main .doc .paySteps ol li.sp2.current strong {
+    width: 182px;
+    background-image: url("../images/frame_payment_step_02.gif");
+  }
+  .main .doc .paySteps ol li.sp3 strong,
+  .main .doc .paySteps ol li.sp3.current strong {
+    width: 158px;
+    background-image: url("../images/frame_payment_step_03.gif");
+  }
+  .main .doc .paySteps ol li.sp4 strong,
+  .main .doc .paySteps ol li.sp4.current strong {
+    width: 100px;
+    background-image: url("../images/frame_payment_step_04.gif");
+  }
+  .main .doc .paySteps ol li.sp5 strong,
+  .main .doc .paySteps ol li.sp5.current strong {
+    width: 115px;
+    background-image: url("../images/frame_payment_step_05.gif");
+  }
+  .main .doc .paySteps ol li.current strong {
+    background-position: left bottom;
+  }
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable tr.theSet {
+    min-height: inherit;
+  }
+  .main .doc .contentTable tr.theSet .pd.actions {
+    position: static;
+  }
+  .main .doc .contentTable tr.theSet .pd.actions .removeItem {
+    top: 10px;
+    right: 0;
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.name {
+    width: calc(100% - 35px - 10px);
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.crew,
+  .main .doc .contentTable tr.theSetChildren .pd.price,
+  .main .doc .contentTable .pd.crew,
+  .main .doc .contentTable .pd.price {
+    float: none;
+    display: inline-block;
+    width: calc(43% - 35px - 10px);
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.price {
+    padding-left: 0;
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.crew br,
+  .main .doc .contentTable .pd.crew br {
+    display: inline-block;
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.crew a,
+  .main .doc .contentTable tr.theSetChildren .pd.crew strong,
+  .main .doc .contentTable tr.theSetChildren .pd.crew span {
+    display: inline;
+  }
+  .main .doc .contentTable tr.theSetChildren .pd.price,
+  .main .doc .contentTable tr.theSetChildren .pd.points,
+  .main .doc .contentTable tr.theSetChildren .pd.actions {
+    display: none;
+  }
+  .main .doc .contentTable .pd.set {
+    width: auto;
+  }
+  .main .doc .contentTable .pd.name {
+    width: 85%;
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 9%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: 30%;
+    max-width: auto;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .main .doc .morePoints {
+    margin-bottom: 0;
+  }
+  .main .doc .morePoints .box {
+    margin-top: 0;
+    display: table;
+  }
+  .main .doc .morePoints .box tbody {
+    width: 100%;
+    display: table-row-group;
+  }
+  .main .doc .morePoints .box tr {
+    width: 100%;
+    display: table-row;
+  }
+  .main .doc .morePoints .box td {
+    display: table-cell;
+    width: 30%;
+  }
+  .main .doc .morePoints .box .pd span {
+    /*名詞解釋標題,標準尺寸*/
+    font-size: 142.8%;
+    line-height: none;
+  }
+  .main .doc .morePoints .box .pd {
+    padding: 0 15px;
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+  .main .doc .morePoints .box .toBuy {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .main .doc .morePoints .box .toBuy button {
+    width: auto;
+    height: 50px;
+  }
+  .main .doc .counting {
+    text-align: right;
+  }
+  .main .doc .counting .total,
+  .main .doc .counting .pay {
+    width: 55%;
+  }
+  .main .doc .tradeFinish .status p {
+    padding: 0;
+    text-align: center;
+  }
+  .main .doc .toBuy:before {
+    display: none;
+  }
+  .main .doc .toBuy.pointsOnly {
+    margin: 0;
+    height: 0;
+    position: relative;
+    text-align: center;
+  }
+  .main .doc .toBuy.pointsOnly .points {
+    /*網站footer,標準尺寸*/
+    font-size: 91.8%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 41px;
+    line-height: 43px;
+    width: 230px;
+  }
+  .main .doc .final {
+    text-align: right;
+  }
+  .main .doc .final .nextBtn,
+  .main .doc .final .prevBtn {
+    padding: 0 75px;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 25%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: inherit;
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

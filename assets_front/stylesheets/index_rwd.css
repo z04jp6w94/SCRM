@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .fullCourse dl dt h3 button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .wrapper .doc .master {
+  position: relative;
+  padding-top: 10px;
+}
+.main .doc .fullCourse {
+  padding-top: 0;
+  margin-top: 0px;
+  width: auto;
+}
+.main .doc .fullCourse > h3 {
+  position: relative;
+  top: 0;
+}
+.main .doc .fullCourse > .bg {
+  margin: 0;
+  background: none;
+}
+.main .doc .fullCourse dl {
+  float: none;
+  width: auto;
+  margin-bottom: 10px;
+}
+.main .doc .fullCourse dl.senior,
+.main .doc .fullCourse dl.insdustry,
+.main .doc .fullCourse dl.junior,
+.main .doc .fullCourse dl.elementery,
+.main .doc .fullCourse dl.license {
+  width: auto;
+}
+.main .doc .fullCourse dl.senior {
+  background-color: #e1ebff;
+}
+.main .doc .fullCourse dl.insdustry {
+  background-color: #ebf6ff;
+}
+.main .doc .fullCourse dl.junior {
+  background-color: #ffd9e6;
+}
+.main .doc .fullCourse dl.elementery {
+  background-color: #fdeef0;
+}
+.main .doc .fullCourse dl.license {
+  background-color: #e3fdfc;
+}
+.main .doc .fullCourse dl dt {
+  margin: 0;
+}
+.main .doc .fullCourse dl dt h3 {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.main .doc .fullCourse dl dt h3 > span {
+  display: none;
+}
+.main .doc .fullCourse dl dt h3 button {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.main .doc .fullCourse dl dt h3 button span.label {
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 57px;
+  height: 60px;
+  font-weight: normal;
+  line-height: 60px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("../images/frame_index_course_rwd_bg.png");
+}
+.main .doc .fullCourse dl dt h3 button span.arrow {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+  width: 28px;
+  height: 24px;
+  background-image: url("../images/frame_index_course_arrow.png");
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+.main .doc .fullCourse dl dt h3.open button span.arrow {
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+.main .doc .fullCourse dl.senior dt h3 button span.label {
+  background-position: left top;
+}
+.main .doc .fullCourse dl.insdustry dt h3 button span.label {
+  background-position: left -55px;
+}
+.main .doc .fullCourse dl.junior dt h3 button span.label {
+  background-position: left -110px;
+}
+.main .doc .fullCourse dl.elementery dt h3 button span.label {
+  background-position: left -165px;
+}
+.main .doc .fullCourse dl.license dt h3 button span.label {
+  background-position: left -220px;
+}
+.main .doc .fullCourse dl dd.open {
+  display: block;
+  border-top: #eee solid 1px;
+}
+.main .doc .fullCourse dl dd {
+  display: none;
+  padding: 10px 0;
+  text-align: left;
+}
+.main .doc .fullCourse dl dd ul {
+  display: block;
+}
+.main .doc .fullCourse dd ul li a span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+}
+.main .doc .more.news a {
+  top: 36px;
+}
+.main .doc .pressList:before {
+  display: none;
+}
+.main .doc .pressList {
+  margin-bottom: 40px;
+}
+.main .doc .pressList dt,
+.main .doc .pressList dd {
+  display: block;
+  width: auto;
+}
+.main .doc .pressList dd ul li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: #aaa dotted 1px;
+}
+.main .doc .pressList dd ul li p {
+  float: none;
+  clear: left;
+  width: auto;
+}
+.main .doc .contentBrief {
+  margin-top: 25px;
+  width: 100%;
+}
+.main .doc .contentBrief .controls {
+  display: none;
+}
+.main .doc .contentBrief .ctx {
+  height: 190px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .contentBrief .ctx {
+    height: 365px;
+  }
+}
+.main .doc .contentBrief .ctx a strong {
+  background-size: 30%;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .wrapper .doc .master {
+    padding-top: 40px;
+  }
+  .main h3 {
+    clear: both;
+  }
+  .main .doc .fullCourse {
+    float: left;
+    width: 48%;
+  }
+  .main .doc .pressList {
+    float: right;
+    width: 47%;
+  }
+  .main .doc .more {
+    clear: both;
+  }
+  .main .doc .more.news {
+    clear: none;
+  }
+  .main .doc .more.news a {
+    top: 39px;
+  }
+  .main .doc .contentBrief .ctx {
+    height: 540px;
+  }
+  .main .doc .contentBrief .ctx a strong {
+    background-size: 30%;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .doc .contentBrief .ctx {
+    height: 420px;
+  }
+  .main .doc .contentBrief .ctx a strong {
+    background-size: 30%;
+  }
+}
+/* 主流平板直向 end */

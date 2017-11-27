@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .wrapper .doc {
+  background: none;
+}
+.main .wrapper .doc .master {
+  float: none;
+  width: auto;
+}
+.main .wrapper .doc .sideColumn {
+  display: none;
+  float: none;
+  width: 100%;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.price {
+  width: auto;
+}
+.main .doc .contentTable .pd.actions {
+  width: auto;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.main .doc .treeMenu.rwd {
+  padding-bottom: 25px;
+  display: block;
+  background-color: #f9f9f9;
+}
+.main .doc .treeMenu.rwd h3 {
+  padding: 10px 0px;
+  padding-left: 35px;
+  text-align: left;
+  font-weight: normal;
+  background-color: #f9f9f9;
+}
+.main .doc .treeMenu.rwd h3 span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: inline-block;
+  margin-left: -15px;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .treeMenu.rwd > ol > li,
+.main .doc .treeMenu.rwd ul > li {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.main .doc .treeMenu.rwd > ol > li.open,
+.main .doc .treeMenu.rwd > ol > li:hover,
+.main .doc .treeMenu.rwd > ol > li.alone,
+.main .doc .treeMenu.rwd > ol > li.alone:hover {
+  background: none;
+}
+.main .doc .treeMenu.rwd > ol {
+  padding: 0 15px;
+}
+.main .doc .treeMenu.rwd > ol br {
+  display: none;
+}
+.main .doc .treeMenu.rwd > ol br.break-2 {
+  display: block;
+}
+.main .doc .treeMenu.rwd > ol > li {
+  padding-left: 0;
+  width: 50%;
+  float: left;
+}
+.main .doc .treeMenu.rwd > ol > li h4,
+.main .doc .treeMenu.rwd > ol > li > a {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+.main .doc .treeMenu.rwd > ol > li h4 span,
+.main .doc .treeMenu.rwd > ol > li > a span {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: normal;
+}
+.main .doc .treeMenu.rwd > ol > li h4 span {
+  border-left: #f7931e solid 5px;
+}
+.main .doc .treeMenu.rwd > ol > li > a span {
+  font-size: inherit;
+  padding-left: 17px;
+}
+.main .doc .treeMenu.rwd > ol > li > a strong {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  top: 22px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f7931e;
+  border: #f7931e solid 1px;
+}
+.main .doc .treeMenu.rwd > ol > li.alone {
+  width: 50%;
+}
+.main .doc .treeMenu.rwd ul {
+  display: block;
+}
+.main .doc .treeMenu.rwd ul li {
+  padding-left: 22px;
+}
+.main .doc .contentBrief {
+  width: 100%;
+}
+.main .doc .contentBrief .controls {
+  display: none;
+}
+.main .doc .contentBrief .ctx {
+  height: 195px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .contentBrief .ctx {
+    height: 358px;
+  }
+}
+.main .doc .contentBrief .ctx a strong {
+  background-size: 30%;
+}
+.main .doc .caseBrief article {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+.main .doc .caseBrief dl:before {
+  display: none;
+}
+.main .doc .caseBrief dl dt,
+.main .doc .caseBrief dl dd {
+  width: auto;
+  display: block;
+}
+.main .doc .caseBrief dl dt {
+  text-align: left;
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+.main .doc .caseBrief dl dt .features {
+  padding: 0;
+}
+.main .doc .caseBrief dl dt .shopping {
+  padding: 0;
+}
+.main .doc .caseBrief dl dt .shopping ul {
+  padding-left: 15px;
+  border-left: #f7931e solid 3px;
+}
+.main .doc .caseBrief dl dt .shopping ul li {
+  width: auto;
+  float: none;
+  height: auto;
+  border: none;
+}
+.main .doc .caseBrief dl dt .shopping ul li:last-child {
+  padding-bottom: 0px;
+}
+.main .doc .caseBrief dl dt .shopping ul li div {
+  line-height: normal;
+}
+.main .doc .caseBrief dl dt .shopping button {
+  margin-top: 0;
+  width: 100%;
+}
+.main .doc .caseBrief dl dd {
+  margin-left: 0;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 16%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: 30%;
+    max-width: auto;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .main .doc .treeMenu.rwd > ol br.break-2 {
+    display: none;
+  }
+  .main .doc .treeMenu.rwd > ol br.break-half,
+  .main .doc .treeMenu.rwd > ol br.break-all,
+  .main .doc .treeMenu.rwd > ol br.break-4 {
+    display: block;
+  }
+  .main .doc .treeMenu.rwd > ol > li {
+    width: 25%;
+  }
+  .main .doc .contentBrief .ctx {
+    height: 560px;
+  }
+  .main .doc .contentBrief .ctx a strong {
+    background-size: 30%;
+  }
+  .main .doc .caseBrief dl dt .shopping ul {
+    border-left: none;
+    padding: 0;
+  }
+  .main .doc .caseBrief dl dt .shopping ul li {
+    width: 50%;
+    float: left;
+  }
+  .main .doc .caseBrief dl dt .shopping ul li strong {
+    padding-left: 10px;
+    border-left: #f7931e solid 3px;
+  }
+  .main .doc .caseBrief dl dt .shopping button {
+    margin-top: 25px;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.actions {
+    width: 25%;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: inherit;
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .doc .contentBrief .ctx {
+    height: 415px;
+  }
+  .main .doc .contentBrief .ctx a strong {
+    background-size: 30%;
+  }
+}
+/* 主流平板直向 end */

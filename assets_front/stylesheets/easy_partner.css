@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .partnerList ul:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .partnerList ul li {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main h3.subTitle {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .pseudoTable {
+  background: none;
+}
+.main .pseudoTable .Thead,
+.main .pseudoTable .Tbody,
+.main .pseudoTable .Tfooter {
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.main .pseudoTable .Thead > div,
+.main .pseudoTable .Tfooter > div {
+  background-repeat: no-repeat;
+}
+.main .pseudoTable .Tbody,
+.main .pseudoTable .Tbody > div {
+  background-repeat: repeat-y;
+}
+.main .pseudoTable .Thead > div *,
+.main .pseudoTable .Tfooter > div *
+.Tbody > div * {
+  background: none;
+}
+.main .pseudoTable .Thead {
+  background-image: url("../images/frame_fake_table_thead_right.gif");
+}
+.main .pseudoTable .Thead > div {
+  background-image: url("../images/frame_fake_table_thead_left.gif");
+}
+.main .pseudoTable .Tbody {
+  background-image: url("../images/frame_fake_table_tbody_right.gif");
+}
+.main .pseudoTable .Tbody > div {
+  padding-left: 8px;
+  padding-right: 10px;
+  background-image: url("../images/frame_fake_table_tbody_left.gif");
+}
+.main .pseudoTable .Tfooter {
+  background-image: url("../images/frame_fake_table_tfooter_right.gif");
+}
+.main .pseudoTable .Tfooter > div {
+  background-image: url("../images/frame_fake_table_tfooter_left.gif");
+}
+.main .pseudoTable .Thead,
+.main .pseudoTable .Thead > div {
+  height: 15px;
+}
+.main .pseudoTable .Tfooter,
+.main .pseudoTable .Tfooter > div {
+  height: 15px;
+}
+.main .doc .partnerList {
+  text-align: center;
+}
+.main .doc .partnerList ul {
+  width: 100%;
+  display: inline-block;
+}
+.main .doc .partnerList ul li {
+  width: 14.5%;
+  margin-right: 0.75%;
+  margin-left: 0.75%;
+  margin-bottom: 25px;
+}
+.main .doc .partnerList ul li a {
+  display: block;
+  text-align: center;
+}
+.main .doc .partnerList ul li a img {
+  margin-top: -7px;
+  margin-bottom: -7px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.main .doc .partnerList ul li a br,
+.main .doc .partnerList ul li a span {
+  display: none;
+}

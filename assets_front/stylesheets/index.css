@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .fullCourse, .main .doc .fullCourse dl dt h3, .main .doc .contentBrief {
+  margin: 0 auto;
+}
+
+.main .doc .pressList:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main .wrapper .doc .master {
+  position: relative;
+  padding-top: 40px;
+}
+.main h3.subTitle {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .fullCourse {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  width: 870px;
+}
+.main .doc .fullCourse > h3 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.main .doc .fullCourse > .bg {
+  margin-top: 60px;
+  background-image: url("../images/frame_index_course_bg_new.gif");
+}
+.main .doc .fullCourse dl {
+  float: left;
+  width: 190px;
+}
+.main .doc .fullCourse dl dt h3 button {
+  display: none;
+}
+.main .doc .fullCourse dl dt {
+  margin-top: -55px;
+}
+.main .doc .fullCourse dl dt h3 {
+  width: 94px;
+  /*height: 90px;*/
+  padding-top: 95px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_index_course_group_bg.gif");
+}
+.main .doc .fullCourse dl dt h3 span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.main .doc .fullCourse dl.elementery {
+  width: 150px;
+}
+.main .doc .fullCourse dl.license {
+  width: 150px;
+}
+.main .doc .fullCourse dl.senior dt h3 {
+  background-position: 0 top;
+  color: #001c58;
+}
+.main .doc .fullCourse dl.insdustry dt h3 {
+  background-position: -94px top;
+  color: #1474bd;
+}
+.main .doc .fullCourse dl.junior dt h3 {
+  background-position: -188px top;
+  color: #e5004f;
+}
+.main .doc .fullCourse dl.elementery dt h3 {
+  background-position: -282px top;
+  color: #eb6877;
+}
+.main .doc .fullCourse dl.license dt h3 {
+  background-position: -376px top;
+  color: #00736d;
+}
+.main .doc .fullCourse dd {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.main .doc .fullCourse dd ul {
+  display: inline-block;
+  padding-left: 10px;
+}
+.main .doc .fullCourse dd ul li {
+  display: inline-block;
+  text-align: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.main .doc .fullCourse dd ul li a {
+  color: #010101;
+  text-decoration: none;
+}
+.main .doc .fullCourse dd ul li a:hover {
+  color: #096db9;
+  text-decoration: underline;
+}
+.main .doc .fullCourse dd ul li a span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+}
+.main .doc .more {
+  position: relative;
+}
+.main .doc .more a {
+  position: absolute;
+  display: block;
+  width: 79px;
+  height: 25px;
+  text-decoration: none;
+  background-image: url("../images/frame_index_more.gif");
+}
+.main .doc .more a span {
+  display: none;
+}
+.main .doc .more a:hover {
+  background-position: left bottom;
+}
+.main .doc .more.news {
+  height: 30px;
+}
+.main .doc .more.news a {
+  top: 0px;
+  right: 0;
+}
+.main .doc .more.video a {
+  top: -45px;
+  right: 0;
+}
+.main .doc .pressList dt,
+.main .doc .pressList dd {
+  display: inline-block;
+  vertical-align: top;
+}
+.main .doc .pressList dt {
+  width: 28%;
+}
+.main .doc .pressList dd {
+  width: 70%;
+  padding-top: 10px;
+}
+.main .doc .pressList dd ul li {
+  margin-bottom: 15px;
+}
+.main .doc .pressList dd ul li > * {
+  display: none;
+}
+.main .doc .pressList dd ul li strong,
+.main .doc .pressList dd ul li time {
+  float: left;
+  margin-bottom: 10px;
+  height: 25px;
+}
+.main .doc .pressList dd ul li strong {
+  margin-right: 15px;
+  width: 54px;
+  background-image: url("../images/frame_index_presslist_hot.gif");
+}
+.main .doc .pressList dd ul li strong span {
+  display: none;
+}
+.main .doc .pressList dd ul li time {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 25px;
+  color: #626262;
+}
+.main .doc .pressList dd ul li > *:nth-child(1),
+.main .doc .pressList dd ul li > *:nth-child(2),
+.main .doc .pressList dd ul li > *:nth-child(3) {
+  display: block;
+}
+.main .doc .pressList dd ul li p {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  float: right;
+  width: calc(100% - 170px);
+  height: 25px;
+  /*margin-top: 10px;*/
+  line-height: 1.55;
+  color: #313131;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main .doc .pressList dd ul li p a {
+  color: #313131;
+  text-decoration: none;
+}
+.main .doc .pressList dd ul li p a:hover {
+  text-decoration: underline;
+}
+.main .doc .pressList dd ul li .clearFloat {
+  display: block;
+}
+.main .doc .contentBrief-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.main .doc .contentBrief-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.main .doc .contentBrief-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.main .doc .contentBrief-dots li button:hover,
+.main .doc .contentBrief-dots li button:focus {
+  outline: none;
+}
+.main .doc .contentBrief-dots li button:hover:before,
+.main .doc .contentBrief-dots li button:focus:before {
+  opacity: 1;
+}
+.main .doc .contentBrief-dots li button:before {
+  font-family: 'slick';
+  font-size: 13px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.9;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 2px 2px 8px #333;
+}
+.main .doc .contentBrief-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: #f7931e;
+}
+.main .doc .contentBrief {
+  width: 92%;
+  margin-top: 45px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.main .doc .contentBrief .controls button {
+  position: absolute;
+  top: 12%;
+  z-index: 1010;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 26px;
+  height: 60%;
+  cursor: pointer;
+}
+.main .doc .contentBrief .controls button span {
+  display: none;
+}
+.main .doc .contentBrief .controls .prev {
+  left: -3%;
+  background-image: url("../images/frame_easy_showcase_contentbrief_left.gif");
+}
+.main .doc .contentBrief .controls .next {
+  right: -3%;
+  background-image: url("../images/frame_easy_showcase_contentbrief_right.gif");
+}
+.main .doc .contentBrief .ctx {
+  position: relative;
+  overflow: hidden;
+  margin: 0 5px;
+  height: 200px;
+}
+.main .doc .contentBrief .ctx a,
+.main .doc .contentBrief .ctx figure {
+  position: absolute;
+}
+.main .doc .contentBrief .ctx a {
+  z-index: 2;
+  background-image: url("../images/spacer.gif");
+  /*修正IE11 以下的實際作用區域*/
+}
+.main .doc .contentBrief .ctx a span {
+  display: none;
+}
+.main .doc .contentBrief .ctx figure {
+  z-index: 1;
+}
+.main .doc .contentBrief .ctx a,
+.main .doc .contentBrief .ctx figure {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .contentBrief .ctx a strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/frame_easy_showcase_contentbrief_play.png");
+}
+.main .doc .contentBrief .ctx figure {
+  margin: 0;
+  padding: 0;
+}
+.main .doc .contentBrief .ctx figure img {
+  display: block;
+}
+.main .doc .contentBrief .ctx .video {
+  display: none;
+}
+.main .doc .contentBrief .ctx.videoOpen a,
+.main .doc .contentBrief .ctx.videoOpen figure {
+  display: none;
+}
+.main .doc .contentBrief .ctx.videoOpen .video {
+  display: block;
+  /*https://avexdesigns.com/responsive-youtube-embed/*/
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.main .doc .contentBrief .ctx.videoOpen .video iframe,
+.main .doc .contentBrief .ctx.videoOpen .video object,
+.main .doc .contentBrief .ctx.videoOpen .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .contentBrief .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}

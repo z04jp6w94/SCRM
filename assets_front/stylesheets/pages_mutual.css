@@ -1,0 +1,856 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main,
+button,
+select,
+select option, .main footer .siteMap dl dt button {
+  font-family: Arial, Helvetica, sans-serif, Microsoft YaHei, Microsoft JhengHei, '微软雅黑体', '微軟雅黑體', '微軟正黑體', '黑體';
+}
+
+.main header,
+.main .grandBanner,
+.main footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 990px;
+}
+
+.main header .links,
+.main header nav.normal ul,
+.main .wrapper,
+.main footer .siteMap table {
+  max-width: 1198px;
+  width: 98%;
+  width: 1198px\9;
+}
+
+.main .mixAlert .Alert.Gift dl, .main .mixAlert .Alert.Wait dl dd .animation, .main header .links,
+.main header nav.normal ul,
+.main .wrapper,
+.main footer .siteMap table, .main .wrapper .horCenter {
+  margin: 0 auto;
+}
+
+.main .mixAlert:before, .main header .links ul:before, .main header .links ul li.search:before, .main header nav.normal ul li a:before, .main .examsFly ul li:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .mixAlert article, .main header .links ul li, .main header .links ul li.search button, .main header .links ul li.search input, .main header nav.normal ul li a span, .main .examsFly ul li .title,
+.main .examsFly ul li .number,
+.main .examsFly ul li > span {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main header .links ul li.search button, .main header .links ul li.search input, .main header .links .rwdMenuBtn, .main footer .siteMap dl dt button, .main .doc .final button, .main .doc .search .buyBtn,
+.main .doc .toBuy .buyBtn {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+#pingForRwd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -1000px;
+  left: -1000px;
+}
+
+#pingForRwd p {
+  float: left;
+}
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/** 給ui 組件使用 begin */
+.main .preloadImg {
+  /*設定該容器內的圖檔需要預載處理*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-image: url("../images/preloader.gif");
+}
+.main .preloadImg img {
+  /*容器內的圖檔狀態*/
+  visibility: hidden;
+}
+
+body.ui-flow-stopper-locked {
+  overflow: hidden;
+}
+
+.main {
+  /* 客製化檔板 組件 begin */
+  /* 客製化檔板 組件 end */
+  /* 客製化Alert 組件 begin */
+  /* 客製化Alert 組件 end */
+}
+.main .blackCover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 1050;
+}
+.main .blackCover.forRwdSearch,
+.main .blackCover.forFlowStopper {
+  display: block;
+}
+.main .blackCover.forFlowStopper {
+  z-index: 1205;
+}
+.main .UIComponent .copy {
+  display: none;
+}
+.main .mixAlert.open {
+  display: block;
+}
+.main .mixAlert {
+  display: none;
+  /*border: #ff0000 solid 1px;*/
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  bottom: 15%;
+  right: 15%;
+  z-index: 1210;
+  min-width: 450px;
+  min-height: 350px;
+  text-align: center;
+}
+.main .mixAlert article {
+  position: relative;
+  text-align: left;
+  padding: 40px;
+  width: auto;
+  max-width: calc(100% - 100px);
+  background-color: #fff;
+  border: #fff solid 1px;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  /* 從IE9 開始支援 */
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(249, 249, 249, 0.45);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(249, 249, 249, 0.45);
+  box-shadow: 0px 0px 7px 1px rgba(249, 249, 249, 0.45);
+}
+.main .mixAlert .Alert .closeBtn {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_cart_btn_close.gif");
+  cursor: pointer;
+}
+.main .mixAlert .Alert .closeBtn span {
+  display: none;
+}
+.main .mixAlert .Alert dl {
+  margin: 0 20px;
+}
+.main .mixAlert .Alert dl dt h3,
+.main .mixAlert .Alert dl dt h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.main .mixAlert .Alert dl dt h3 span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.25;
+}
+.main .mixAlert .Alert dl dt h4 span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 1.25;
+}
+.main .mixAlert .Alert dl dd {
+  margin-top: 35px;
+  text-align: center;
+}
+.main .mixAlert .Alert dl dd .doneBtn,
+.main .mixAlert .Alert dl dd .deniedBtn {
+  background: none;
+  border: none;
+  border: #dcedc8 solid 1px;
+  background-color: #dcedc8;
+  padding: 12px 25px;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main .mixAlert .Alert dl dd .doneBtn span,
+.main .mixAlert .Alert dl dd .deniedBtn span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  color: #43a047;
+}
+.main .mixAlert .Alert.Cart figure {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+}
+.main .mixAlert .Alert.Cart figure span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: #ccc solid 1px;
+}
+.main .mixAlert .Alert.Cart figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main .mixAlert .Alert.Cart dl {
+  margin-left: 140px;
+  /*max-width: calc(100% - 160px);*/
+}
+.main .mixAlert .Alert.Cart dl dt h4 {
+  color: #ff2818;
+}
+.main .mixAlert .Alert.Cart dl .doneBtn {
+  padding-left: 45px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  background-image: url("../Images/frame_ui_alert_done.gif");
+}
+.main .mixAlert .Alert.Gift dl {
+  width: 70%;
+}
+.main .mixAlert .Alert.Gift dl dt figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.main .mixAlert .Alert.Gift dl dt figure span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: #ccc solid 1px;
+}
+.main .mixAlert .Alert.Gift dl dt figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main .mixAlert .Alert.Wait dl dt h3,
+.main .mixAlert .Alert.Wait dl dt h4 {
+  text-align: center;
+}
+.main .mixAlert .Alert.Wait dl dd {
+  margin-top: 0;
+}
+.main .mixAlert .Alert.Wait dl dd .animation {
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("../Images/frame_ui_alert_wait.gif");
+}
+.main .mixAlert .Alert.Wait dl dd .animation span {
+  display: none;
+}
+.main .mixAlert .Alert.Confirm dl dd .doneBtn {
+  margin-right: 10px;
+}
+.main .mixAlert .Alert.Confirm dl dd .deniedBtn {
+  margin-left: 10px;
+}
+
+/** 給ui 組件使用 end */
+.main {
+  position: relative;
+  /*一些常用標籤*/
+}
+.main header .links h1 {
+  float: left;
+  width: 300px;
+  height: 108px;
+  padding-left: 50px;
+}
+.main header .links h1 a {
+  display: block;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/frame_site_logo.gif");
+}
+.main header .links ul {
+  float: right;
+  padding-top: 32px;
+}
+.main header .links ul li {
+  margin-right: 5px;
+  width: 43px;
+}
+.main header .links ul li a {
+  display: block;
+  width: 43px;
+  height: 43px;
+  background-image: url("../images/frame_site_social.gif");
+}
+.main header .links ul li a span {
+  display: none;
+}
+.main header .links ul li.soc2 a {
+  background-position: -43px;
+}
+.main header .links ul li.soc3 a {
+  background-position: -86px;
+}
+.main header .links ul li.search {
+  width: auto;
+  margin-right: 0;
+}
+.main header .links ul li.search button {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 43px;
+  height: 43px;
+  background-image: url("../images/frame_site_social.gif");
+  background-position: -129px;
+}
+.main header .links ul li.search button span {
+  display: none;
+}
+.main header .links ul li.search button.openSearch {
+  display: none;
+}
+.main header .links ul li.search input {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  padding: 5px 8px;
+  color: #707070;
+  background-color: #fff;
+  width: 136px;
+  height: 22px;
+  border: #b0b0b0 solid 1px;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(210, 210, 210, 0.75);
+  -moz-box-shadow: inset 3px 3px 5px 0px rgba(210, 210, 210, 0.75);
+  box-shadow: inset 3px 3px 5px 0px rgba(210, 210, 210, 0.75);
+}
+.main header .links .rwdMenuBtn {
+  display: none;
+}
+.main header .links .rwdMenuBtn span {
+  display: none;
+}
+.main header nav.normal {
+  height: 47px;
+  background-color: #f7931e;
+}
+.main header nav.normal ul {
+  display: block;
+  height: inherit;
+}
+.main header nav.normal ul li {
+  float: left;
+  width: calc((100% / 6) - 1px);
+  width: 16.1% \9;
+  height: 100%;
+}
+.main header nav.normal ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.main header nav.normal ul li a.current,
+.main header nav.normal ul li a:hover {
+  color: #e78d00;
+  background-image: url("../images/frame_menu_item_bg.gif");
+  background-repeat: repeat-x;
+}
+.main header nav.normal ul li a span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  position: static;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.main header nav.normal ul li a.current .sideBorder,
+.main header nav.normal ul li a:hover .sideBorder,
+.main header nav.normal ul li:last-child a .sideBorder {
+  display: none;
+}
+.main header nav.normal ul li a .sideBorder {
+  position: absolute;
+  top: 30%;
+  bottom: 30%;
+  right: -1px;
+  width: 1px;
+  background-color: #fff;
+}
+.main header nav.rwd {
+  display: none;
+}
+.main footer {
+  margin-top: 50px;
+}
+.main footer .siteMap {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color: #f7931e;
+}
+.main footer .siteMap > table tr td {
+  width: 25%;
+  position: relative;
+}
+.main footer .siteMap > table tr td .spLine {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: #fff;
+}
+.main footer .siteMap > table tr td:last-child .spLine {
+  display: none;
+}
+.main footer .siteMap dl dt {
+  padding-bottom: 20px;
+}
+.main footer .siteMap dl dt h3 {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  text-align: center;
+}
+.main footer .siteMap dl dt h3 span {
+  color: #fff;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.main footer .siteMap dl dt button {
+  display: none;
+}
+.main footer .siteMap dl dt button span {
+  display: none;
+}
+.main footer .siteMap dl dd {
+  text-align: center;
+}
+.main footer .siteMap dl dd ul {
+  display: inline-block;
+}
+.main footer .siteMap dl dd ul li {
+  margin-bottom: 15px;
+}
+.main footer .siteMap dl dd ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.main footer .siteMap dl dd ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.main footer .siteMap dl dd ul li a span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 1.25;
+}
+.main footer .siteMap dl dd ul > br.break-2 {
+  display: none;
+}
+.main footer .cprs {
+  padding: 8px 0;
+  background-color: #000;
+}
+.main footer .cprs p,
+.main footer .cprs address {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  color: #fff;
+  font-style: normal;
+  padding: 5px 0;
+  text-align: center;
+  line-height: 1.25;
+}
+.main footer .cprs p sup {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  vertical-align: super;
+}
+.main footer .cprs address br {
+  display: none;
+}
+.main .wrapper .doc.heading {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main .wrapper .doc .sideColumn {
+  display: none;
+  /*預設不使用*/
+}
+.main .wrapper .breadCrumb ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.main .wrapper .breadCrumb ul li a,
+.main .wrapper .breadCrumb ul li:last-child span {
+  display: block;
+  padding-left: 25px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/frame_breadcrumb_next.gif");
+}
+.main .wrapper .breadCrumb ul li a {
+  background-repeat: no-repeat;
+}
+.main .wrapper .breadCrumb ul li a:hover {
+  text-decoration: underline;
+}
+.main .wrapper .breadCrumb ul li:first-child a {
+  padding-left: 25px;
+  background-position: left center;
+  background-image: url("../images/frame_breadcrumb_home.gif");
+}
+.main .wrapper .breadCrumb ul li:last-child span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  color: #f7931e;
+}
+.main .wrapper .breadCrumb ul li a span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .grandBanner-dots {
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.main .grandBanner-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.main .grandBanner-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.main .grandBanner-dots li button:hover,
+.main .grandBanner-dots li button:focus {
+  outline: none;
+}
+.main .grandBanner-dots li button:hover:before,
+.main .grandBanner-dots li button:focus:before {
+  opacity: 1;
+}
+.main .grandBanner-dots li button:before {
+  font-family: 'slick';
+  font-size: 13px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.9;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 2px 2px 8px #333;
+}
+.main .grandBanner-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: #f7931e;
+}
+.main .grandBanner {
+  padding-bottom: 9px;
+  background-color: #f7931e;
+  position: relative;
+}
+.main .grandBanner h2 {
+  display: none;
+}
+.main .grandBanner .controls button {
+  position: absolute;
+  top: 20%;
+  z-index: 1010;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 60%;
+  cursor: pointer;
+}
+.main .grandBanner .controls button span {
+  display: none;
+}
+.main .grandBanner .controls .prev {
+  left: 40px;
+  background-image: url("../images/frame_grandbanner_arrow_left.png");
+}
+.main .grandBanner .controls .next {
+  right: 40px;
+  background-image: url("../images/frame_grandbanner_arrow_right.png");
+}
+.main .grandBanner .ctx {
+  position: relative;
+  overflow: hidden;
+  height: 305px;
+}
+.main .grandBanner .ctx a,
+.main .grandBanner .ctx figure {
+  position: absolute;
+}
+.main .grandBanner .ctx a {
+  z-index: 2;
+  background-image: url("../images/spacer.gif");
+  /*修正IE11 以下的實際作用區域*/
+}
+.main .grandBanner .ctx a span {
+  display: none;
+}
+.main .grandBanner .ctx figure {
+  z-index: 1;
+}
+.main .grandBanner .ctx a,
+.main .grandBanner .ctx figure {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .grandBanner .ctx figure {
+  margin: 0;
+  padding: 0;
+}
+.main .grandBanner .ctx figure img {
+  display: block;
+}
+.main .grandBanner .ctx figure img.rwd {
+  display: none;
+}
+.main .grandBanner .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.main .examsFly {
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  background-color: #eeeeee;
+}
+.main .examsFly h3 {
+  display: none;
+}
+.main .examsFly br {
+  display: none;
+}
+.main .examsFly ul {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.main .examsFly ul li {
+  display: none;
+}
+.main .examsFly ul li.open {
+  /*內頁主要內容小標題,標準尺寸*/
+  font-size: 173.4%;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.25;
+}
+.main .examsFly ul li .title,
+.main .examsFly ul li .number,
+.main .examsFly ul li > span {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.main .examsFly ul li .title {
+  padding: 15px 0;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-image: url("../images/frame_site_examfly_pen.gif");
+}
+.main .examsFly ul li .number {
+  margin-top: 12px;
+  margin-right: 3px;
+  width: 40px;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_site_examfly_numbers.gif");
+}
+.main .examsFly ul li > span {
+  margin-right: 5px;
+}
+.main .siteHelper .goTop,
+.main .siteHelper ul li a {
+  display: block;
+}
+.main .siteHelper .goTop span,
+.main .siteHelper ul li a span {
+  display: none;
+}
+.main .siteHelper .goTop {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 90px;
+  right: 75px;
+  width: 70px;
+  height: 70px;
+  border: #fff solid 1px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_gotop.png");
+}
+.main .siteHelper ul {
+  position: fixed;
+  top: 490px;
+  right: 0;
+  width: 70px;
+}
+.main .siteHelper ul li a {
+  width: 70px;
+  height: 68px;
+}
+.main .siteHelper ul li a.quiz {
+  background-color: #ea68a2;
+  background-image: url("../images/frame_site_helper_quiz.gif");
+}
+.main .siteHelper ul li a.advisory {
+  background-color: #13b5b1;
+  background-image: url("../images/frame_site_helper_advisory.gif");
+}
+.main .siteHelper ul li a.manage {
+  background-color: #00a0e9;
+  background-image: url("../images/frame_site_helper_manage.gif");
+}
+.main .doc .final button {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  height: 50px;
+  cursor: pointer;
+  padding: 0 45px;
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .search .buyBtn,
+.main .doc .toBuy .buyBtn {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 25px;
+  color: #fff;
+  height: 50px;
+  background-color: #f7931e;
+}
+.main .doc .search .points,
+.main .doc .toBuy .points {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  display: inline-block;
+  padding: 0 45px;
+  color: #f7931e;
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  border: #f7931e solid 1px;
+}
+
+/* 裝置螢幕高度小於等於768px begin */
+@media only screen and (max-device-height: 768px) {
+  .main .grandBanner .ctx {
+    height: 280px;
+  }
+  .main .siteHelper .goTop {
+    display: none;
+  }
+  .main .siteHelper ul {
+    top: 450px;
+  }
+}
+/* 裝置螢幕高度小於等於768px end */

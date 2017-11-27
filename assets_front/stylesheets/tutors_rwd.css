@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .wrapper .doc .master {
+  float: none;
+  width: auto;
+}
+.main .wrapper .doc .sideColumn {
+  display: none;
+  float: none;
+  width: auto;
+}
+.main .doc .teacherTable .teachersType li {
+  margin-right: 1.25%;
+  width: 32%;
+}
+.main .doc .teacherTable .teachersType li:nth-child(3n) {
+  margin-right: 0;
+}
+.main .doc .teacherTable .teachersType li:last-child {
+  margin-right: 0;
+}
+.main .doc .teacherTable .teachersType li a {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+.main .doc .teacherTable .teachers li {
+  width: 47.75%;
+}
+.main .doc .teacherTable .teachers li,
+.main .doc .teacherTable .teachers li:nth-child(5n) {
+  margin-right: 4.25%;
+}
+.main .doc .teacherTable .teachers li:nth-child(2n) {
+  margin-right: 0;
+}
+.main .doc .teacherTable .teachers li a {
+  height: 390px;
+}
+.main .doc .teacherTable .teachers li a figure {
+  position: relative;
+  height: 210px;
+}
+.main .doc .teacherTable .teachers li a .pointer {
+  display: none;
+}
+.main .doc .teacherTable .teachers li a .desc {
+  top: 69.69697%;
+  height: 46px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .teacherTable .teachers li a {
+    height: 490px;
+  }
+  .main .doc .teacherTable .teachers li a figure {
+    height: 335px;
+  }
+  .main .doc .teacherTable .teachers li a .name {
+    top: 71.21212%;
+  }
+  .main .doc .teacherTable .teachers li a .desc {
+    top: 78.78788%;
+    height: 46px;
+  }
+  .main .doc .teacherTable .teachers li a .btn {
+    top: 90.90909%;
+  }
+}
+.main .doc .teacherTable .teachers li a figure figcaption,
+.main .doc .teacherTable .teachers li a :hover figure figcaption {
+  top: inherit;
+  bottom: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: auto;
+  background-repeat: repeat;
+  background-image: url("../images/frame_tutors_teacher_bg.png");
+}
+.main .doc .teacherTable .teachers li a figure figcaption span,
+.main .doc .teacherTable .teachers li a :hover figure figcaption span {
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+  white-space: pre-wrap;
+  text-overflow: normal;
+  overflow: visible;
+}
+.main .doc .teacherDetail:before {
+  display: none;
+}
+.main .doc .teacherDetail > dt,
+.main .doc .teacherDetail > dd {
+  display: block;
+  width: auto;
+}
+.main .doc .teacherDetail > dt {
+  min-height: inherit;
+  margin-bottom: 5px;
+  background-color: #f6f6f6;
+}
+.main .doc .teacherDetail {
+  background: none;
+}
+.main .doc .teacherDetail .icon {
+  position: relative;
+  float: left;
+  width: 40%;
+  height: 240px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .teacherDetail .icon {
+    height: 320px;
+  }
+}
+.main .doc .teacherDetail .icon figure figcaption,
+.main .doc .teacherDetail .icon:hover figure figcaption {
+  top: inherit;
+  bottom: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: auto;
+  background-repeat: repeat;
+  background-image: url("../images/frame_tutors_teacher_bg.png");
+}
+.main .doc .teacherDetail .icon figure figcaption span,
+.main .doc .teacherDetail .icon:hover figure figcaption span {
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+  white-space: pre-wrap;
+  text-overflow: normal;
+  overflow: visible;
+}
+.main .doc .teacherDetail .spec {
+  float: left;
+  margin-left: 0;
+  width: 59.5%;
+}
+.main .doc .teacherDetail .spec > dt button {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+}
+.main .doc .teacherDetail .spec > dd {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .teacherTable .teachersType li {
+    margin-right: 1.25%;
+    width: 19%;
+  }
+  .main .doc .teacherTable .teachersType li:nth-child(3n) {
+    margin-right: 1.25%;
+  }
+  .main .doc .teacherTable .teachersType li:last-child {
+    margin-right: 0;
+  }
+  .main .doc .teacherTable .teachersType li a {
+    /* 從IE9 開始支援 */
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  .main .doc .teacherTable .teachers li {
+    width: 31.33%;
+  }
+  .main .doc .teacherTable .teachers li,
+  .main .doc .teacherTable .teachers li:nth-child(2n),
+  .main .doc .teacherTable .teachers li:nth-child(5n) {
+    margin-right: 3%;
+  }
+  .main .doc .teacherTable .teachers li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .main .doc .teacherTable .teachers li a {
+    height: 450px;
+  }
+  .main .doc .teacherTable .teachers li a figure {
+    height: 290px;
+  }
+  .main .doc .teacherTable .teachers li a .name {
+    top: 66.66667%;
+  }
+  .main .doc .teacherTable .teachers li a .desc {
+    top: 74.84848%;
+  }
+  .main .doc .teacherTable .teachers li a .btn {
+    top: 87.87879%;
+  }
+  .main .doc .teacherDetail .icon {
+    width: 36%;
+    height: 360px;
+  }
+  .main .doc .teacherDetail .spec {
+    width: 63.9%;
+  }
+  .main .doc .teacherDetail .spec > dt button {
+    /*內文,標準尺寸*/
+    font-size: 102%;
+  }
+  .main .doc .teacherDetail .spec > dd {
+    padding: 0 20px;
+    padding-bottom: 25px;
+  }
+  .main .doc .contentTable tbody tr {
+    position: relative;
+    min-height: 150px;
+  }
+  .main .doc .contentTable td {
+    padding: 7px 15px;
+  }
+  .main .doc .contentTable .pd.name {
+    width: 70%;
+    /*border-bottom: #bdbdbd dashed 1px;*/
+  }
+  .main .doc .contentTable .pd.name a {
+    /*text-decoration: none;*/
+  }
+  .main .doc .contentTable .pd.crew,
+  .main .doc .contentTable .pd.price {
+    float: none;
+    display: inline-block;
+    width: calc(35% - 15px - 15px);
+  }
+  .main .doc .contentTable .pd.actions {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 16%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: right;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: 30%;
+    max-width: auto;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    /*內文,標準尺寸*/
+    font-size: 102%;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .teacherTable .teachers li a {
+    height: 550px;
+  }
+  .main .doc .teacherTable .teachers li a figure {
+    height: 330px;
+  }
+  .main .doc .teacherTable .teachers li a .name {
+    top: 63.63636%;
+  }
+  .main .doc .teacherTable .teachers li a .desc {
+    top: 72.72727%;
+    height: 68px;
+  }
+  .main .doc .teacherTable .teachers li a .btn {
+    top: 90.90909%;
+  }
+  .main .doc .teacherDetail .icon {
+    width: 28%;
+    height: 380px;
+  }
+  .main .doc .teacherDetail .spec {
+    width: 71.9%;
+  }
+  .main .doc .contentTable tbody tr {
+    position: relative;
+    min-height: inherit;
+  }
+  .main .doc .contentTable td {
+    padding: 7px 15px;
+  }
+  .main .doc .contentTable .pd.name {
+    width: 70%;
+  }
+  .main .doc .contentTable .pd.crew,
+  .main .doc .contentTable .pd.price {
+    float: none;
+    display: inline-block;
+    width: calc(35% - 15px - 15px);
+  }
+  .main .doc .contentTable .pd.actions {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 25%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: right;
+  }
+  .main .doc .contentTable .pd.actions a,
+  .main .doc .contentTable .pd.actions button {
+    min-width: inherit;
+    max-width: inherit;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

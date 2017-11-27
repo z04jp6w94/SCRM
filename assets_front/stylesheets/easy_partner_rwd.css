@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .partnerList ul li {
+  width: calc(50% - 15px);
+  margin-left: 0;
+  margin-right: 15px;
+}
+.main .doc .partnerList ul li:nth-child(2n) {
+  margin-right: 0;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .partnerList ul li {
+    width: calc(24.5% - 15px);
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .main .doc .partnerList ul li:nth-child(2n) {
+    margin-right: 15px;
+  }
+  .main .doc .partnerList ul li:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

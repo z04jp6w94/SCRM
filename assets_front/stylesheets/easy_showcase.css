@@ -1,0 +1,487 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .contentBrief {
+  margin: 0 auto;
+}
+
+.main .doc .caseBrief dl:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .caseBrief dl dt,
+.main .doc .caseBrief dl dd {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .treeMenu > ol > li button, .main .doc .caseBrief dl dt .shopping button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main .wrapper .doc .master {
+  float: right;
+  width: 78.5%;
+}
+.main .wrapper .doc .sideColumn {
+  display: block;
+  float: left;
+  width: 20.1%;
+}
+.main .wrapper .doc {
+  background-repeat: repeat-y;
+  background-size: 20.1%;
+  background-image: url("../images/frame_easy_showcase_bg.gif");
+}
+.main .wrapper .doc.heading {
+  background: none;
+}
+.main h3.subTitle {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+  padding-left: 17px;
+  background-color: #ffe8ce;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding-left: 10px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.points {
+  width: 18%;
+}
+.main .doc .contentTable .pd.price {
+  width: 18%;
+}
+.main .doc .contentTable .pd.actions {
+  width: 16%;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.main .doc .treeMenu > ol > li,
+.main .doc .treeMenu ul > li {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 5px;
+  background-position: 20px 6px;
+  background-repeat: no-repeat;
+}
+.main .doc .treeMenu > ol > li a,
+.main .doc .treeMenu ul > li a {
+  color: #313131;
+  text-decoration: underline;
+}
+.main .doc .treeMenu > ol > li a:hover,
+.main .doc .treeMenu ul > li a:hover {
+  color: #f7931e;
+  text-decoration: none;
+}
+.main .doc .treeMenu > ol > li a span,
+.main .doc .treeMenu ul > li a span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.55;
+}
+.main .doc .treeMenu > ol > li {
+  padding-left: 40px;
+  list-style: none;
+  background-image: url("../images/frame_easy_showcase_arrow_01.gif");
+}
+.main .doc .treeMenu > ol > li button {
+  cursor: pointer;
+}
+.main .doc .treeMenu > ol > li button span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  color: #313131;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .treeMenu > ol > li.open,
+.main .doc .treeMenu > ol > li:hover {
+  background-image: url("../images/frame_easy_showcase_arrow_02.gif");
+}
+.main .doc .treeMenu > ol > li.open ul {
+  display: block;
+}
+.main .doc .treeMenu > ol > li.alone,
+.main .doc .treeMenu > ol > li.alone:hover {
+  background-image: url("../images/frame_easy_showcase_arrow_03.gif");
+}
+.main .doc .treeMenu > ol > li.alone a {
+  text-decoration: none;
+}
+.main .doc .treeMenu > ol > li.alone a:hover {
+  text-decoration: underline;
+}
+.main .doc .treeMenu > ol > li.alone a span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .treeMenu ul {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: none;
+}
+.main .doc .treeMenu.rwd {
+  display: none;
+}
+.main .doc .contentBrief-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.main .doc .contentBrief-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.main .doc .contentBrief-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.main .doc .contentBrief-dots li button:hover,
+.main .doc .contentBrief-dots li button:focus {
+  outline: none;
+}
+.main .doc .contentBrief-dots li button:hover:before,
+.main .doc .contentBrief-dots li button:focus:before {
+  opacity: 1;
+}
+.main .doc .contentBrief-dots li button:before {
+  font-family: 'slick';
+  font-size: 13px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.9;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 2px 2px 8px #333;
+}
+.main .doc .contentBrief-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: #f7931e;
+}
+.main .doc .contentBrief {
+  width: 90%;
+  padding-bottom: 40px;
+  position: relative;
+}
+.main .doc .contentBrief .controls button {
+  position: absolute;
+  top: 20%;
+  z-index: 1010;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 26px;
+  height: 60%;
+  cursor: pointer;
+}
+.main .doc .contentBrief .controls button span {
+  display: none;
+}
+.main .doc .contentBrief .controls .prev {
+  left: -5%;
+  background-image: url("../images/frame_easy_showcase_contentbrief_left.gif");
+}
+.main .doc .contentBrief .controls .next {
+  right: -5%;
+  background-image: url("../images/frame_easy_showcase_contentbrief_right.gif");
+}
+.main .doc .contentBrief .ctx {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+}
+.main .doc .contentBrief .ctx a,
+.main .doc .contentBrief .ctx figure {
+  position: absolute;
+}
+.main .doc .contentBrief .ctx a {
+  z-index: 2;
+  background-image: url("../images/spacer.gif");
+  /*修正IE11 以下的實際作用區域*/
+}
+.main .doc .contentBrief .ctx a span {
+  display: none;
+}
+.main .doc .contentBrief .ctx figure {
+  z-index: 1;
+}
+.main .doc .contentBrief .ctx a,
+.main .doc .contentBrief .ctx figure {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .contentBrief .ctx a strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/frame_easy_showcase_contentbrief_play.png");
+}
+.main .doc .contentBrief .ctx figure {
+  margin: 0;
+  padding: 0;
+}
+.main .doc .contentBrief .ctx figure img {
+  display: block;
+}
+.main .doc .contentBrief .ctx .video {
+  display: none;
+}
+.main .doc .contentBrief .ctx.videoOpen a,
+.main .doc .contentBrief .ctx.videoOpen figure {
+  display: none;
+}
+.main .doc .contentBrief .ctx.videoOpen .video {
+  display: block;
+  /*https://avexdesigns.com/responsive-youtube-embed/*/
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.main .doc .contentBrief .ctx.videoOpen .video iframe,
+.main .doc .contentBrief .ctx.videoOpen .video object,
+.main .doc .contentBrief .ctx.videoOpen .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .contentBrief .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.main .doc .caseBrief {
+  margin-bottom: 20px;
+}
+.main .doc .caseBrief article {
+  position: relative;
+  padding: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.main .doc .caseBrief article strong {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.main .doc .caseBrief article span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  font-weight: bold;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .caseBrief article.senior,
+.main .doc .caseBrief article.insdustry,
+.main .doc .caseBrief article.junior,
+.main .doc .caseBrief article.elementery,
+.main .doc .caseBrief article.license {
+  padding-left: 55px;
+}
+.main .doc .caseBrief article.senior strong,
+.main .doc .caseBrief article.insdustry strong,
+.main .doc .caseBrief article.junior strong,
+.main .doc .caseBrief article.elementery strong,
+.main .doc .caseBrief article.license strong {
+  background-image: url("../images/frame_curriculum_intro_bg.gif");
+}
+.main .doc .caseBrief article.senior strong {
+  background-position: left top;
+}
+.main .doc .caseBrief article.insdustry strong {
+  background-position: -40px top;
+}
+.main .doc .caseBrief article.junior strong {
+  background-position: -80px top;
+}
+.main .doc .caseBrief article.elementery strong {
+  background-position: -120px top;
+}
+.main .doc .caseBrief article.license strong {
+  background-position: -160px top;
+}
+.main .doc .caseBrief dl {
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+}
+.main .doc .caseBrief dl dt {
+  width: 50.5%;
+}
+.main .doc .caseBrief dl dt .features {
+  padding-left: 35px;
+}
+.main .doc .caseBrief dl dt .features ul li {
+  width: auto;
+  background-image: url("../images/frame_curriculum_arrow_02.gif");
+}
+.main .doc .caseBrief dl dt .features ul li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: left 5px;
+}
+.main .doc .caseBrief dl dt .features ul li span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  line-height: 1.55;
+}
+.main .doc .caseBrief dl dt .shopping {
+  padding-left: 25px;
+  text-align: right;
+}
+.main .doc .caseBrief dl dt .shopping ul {
+  display: block;
+  margin-bottom: 25px;
+  /*border-left: #f7931e solid 3px;*/
+}
+.main .doc .caseBrief dl dt .shopping ul li {
+  width: 50%;
+  height: 40px;
+  float: left;
+  text-align: left;
+  padding-bottom: 15px;
+  border-bottom: #f7931e solid 1px;
+}
+.main .doc .caseBrief dl dt .shopping ul li div {
+  height: inherit;
+  line-height: 55px;
+}
+.main .doc .caseBrief dl dt .shopping ul li div * {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  font-weight: normal;
+}
+.main .doc .caseBrief dl dt .shopping ul li div.money.discounted span,
+.main .doc .caseBrief dl dt .shopping ul li div.money.discounted strong,
+.main .doc .caseBrief dl dt .shopping ul li div.points.discounted span,
+.main .doc .caseBrief dl dt .shopping ul li div.points.discounted strong {
+  color: #ff0000;
+}
+.main .doc .caseBrief dl dt .shopping ul li div.money.discounted span,
+.main .doc .caseBrief dl dt .shopping ul li div.points.discounted span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main .doc .caseBrief dl dt .shopping ul li.erased div span,
+.main .doc .caseBrief dl dt .shopping ul li.erased div strong {
+  text-decoration: line-through;
+}
+.main .doc .caseBrief dl dt .shopping button {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,小標題*/
+  font-size: 112.2%;
+  margin-top: 20px;
+  height: 50px;
+  cursor: pointer;
+  padding: 0 45px;
+  color: #fff;
+  background-color: #e27a00;
+}
+.main .doc .caseBrief dl dd {
+  margin-left: 3%;
+  width: 45%;
+}
+.main .doc .caseBrief dl dd .video {
+  display: block;
+  /*https://avexdesigns.com/responsive-youtube-embed/*/
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.main .doc .caseBrief dl dd .video iframe,
+.main .doc .caseBrief dl dd .video object,
+.main .doc .caseBrief dl dd .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .doc .sideColumn {
+  padding-bottom: 25px;
+}
+.main .doc .sideColumn h3 {
+  padding-left: 35px;
+  text-align: left;
+}

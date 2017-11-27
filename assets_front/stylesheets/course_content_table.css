@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button,
+.main .doc .contentTable .pd.actions label,
+.main .doc .contentTable .pd.actions .courseEnded {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main {
+  /* 課程內容列表 begin */
+  /* 課程內容列表 end */
+}
+.main .doc .contentTable {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.main .doc .contentTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main .doc .contentTable table thead {
+  background-color: #a0a0a0;
+}
+.main .doc .contentTable table thead tr:hover {
+  background: none;
+}
+.main .doc .contentTable .hd {
+  padding: 10px 15px;
+  color: #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+.main .doc .contentTable .hd span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .contentTable td {
+  padding: 15px 15px;
+  vertical-align: middle;
+  border-bottom: #dcdcdc solid 1px;
+}
+.main .doc .contentTable tr:last-child td {
+  border: none;
+}
+.main .doc .contentTable .pd a {
+  color: #313131;
+  text-decoration: none;
+}
+.main .doc .contentTable .pd a:hover {
+  text-decoration: underline;
+}
+.main .doc .contentTable .pd strong,
+.main .doc .contentTable .pd span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  font-weight: normal;
+  color: #313131;
+  line-height: 1.55;
+}
+.main .doc .contentTable .pd > br,
+.main .doc .contentTable .pd > strong,
+.main .doc .contentTable .pd .secondary {
+  display: none;
+}
+.main .doc .contentTable .pd.name span {
+  font-weight: bold;
+}
+.main .doc .contentTable .pd.crew {
+  width: 13%;
+}
+.main .doc .contentTable .pd.crew a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.main .doc .contentTable .pd.units {
+  width: 9%;
+}
+.main .doc .contentTable .pd.price {
+  width: 16%;
+}
+.main .doc .contentTable .pd.importDate,
+.main .doc .contentTable .pd.expiredDate {
+  width: 16%;
+}
+.main .doc .contentTable .pd.points {
+  width: 16%;
+}
+.main .doc .contentTable .pd.points span,
+.main .doc .contentTable .pd.points strong {
+  /*color: #ff0000;*/
+}
+.main .doc .contentTable .pd.price strong,
+.main .doc .contentTable .pd.points strong {
+  display: inline;
+}
+.main .doc .contentTable .pd.price .show,
+.main .doc .contentTable .pd.points .show {
+  display: inline-block;
+}
+.main .doc .contentTable .pd.price .secondary,
+.main .doc .contentTable .pd.points .secondary {
+  display: none;
+}
+.main .doc .contentTable .pd.price .special,
+.main .doc .contentTable .pd.points .special {
+  color: #ff0000;
+  font-weight: bold;
+}
+.main .doc .contentTable .pd.price .ignored,
+.main .doc .contentTable .pd.points .ignored {
+  text-decoration: line-through;
+}
+.main .doc .contentTable .pd.actions {
+  width: 20%;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button,
+.main .doc .contentTable .pd.actions label,
+.main .doc .contentTable .pd.actions .courseEnded {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  padding-top: 32px;
+  margin-left: 3px;
+  text-align: center;
+}
+.main .doc .contentTable .pd.actions button,
+.main .doc .contentTable .pd.actions label {
+  cursor: pointer;
+}
+.main .doc .contentTable .pd.actions a,
+.main .doc .contentTable .pd.actions button,
+.main .doc .contentTable .pd.actions .courseEnded {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+}
+.main .doc .contentTable .pd.actions a span,
+.main .doc .contentTable .pd.actions button span,
+.main .doc .contentTable .pd.actions .courseEnded span {
+  font-size: inherit;
+  display: inline-block;
+  width: 100%;
+}
+.main .doc .contentTable .pd.actions a strong,
+.main .doc .contentTable .pd.actions button strong,
+.main .doc .contentTable .pd.actions label strong,
+.main .doc .contentTable .pd.actions .courseEnded strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("../images/frame_operate_btns.png");
+}
+.main .doc .contentTable .pd.actions .courseEnded strong {
+  background-image: url("../images/frame_study_course_ended.png");
+}
+.main .doc .contentTable .pd.actions .video:hover strong {
+  background-position: center -160px;
+}
+.main .doc .contentTable .pd.actions .ntdBuy strong {
+  background-position: center -32px;
+}
+.main .doc .contentTable .pd.actions .ntdBuy:hover strong {
+  background-position: center -192px;
+}
+.main .doc .contentTable .pd.actions .setToBuy input {
+  display: none;
+}
+.main .doc .contentTable .pd.actions .setToBuy strong {
+  background-position: center -32px;
+}
+.main .doc .contentTable .pd.actions .setToBuy:hover strong,
+.main .doc .contentTable .pd.actions .setToBuy.checked strong {
+  background-position: center -192px;
+}
+.main .doc .contentTable .pd.actions .pointBuy strong {
+  background-position: center -64px;
+}
+.main .doc .contentTable .pd.actions .pointBuy:hover strong {
+  background-position: center -224px;
+}
+.main .doc .contentTable .pd.actions .removeItem strong {
+  background-position: center -96px;
+}
+.main .doc .contentTable .pd.actions .removeItem:hover strong {
+  background-position: center -256px;
+}
+.main .doc .contentTable .pd.actions .goStudy strong {
+  background-position: center -128px;
+}
+.main .doc .contentTable .pd.actions .goStudy:hover strong {
+  background-position: center -288px;
+}
+
+.main {
+  /* 產生hover 效果 */
+}
+.main .doc .contentTable tr:hover {
+  background-color: #ffe8ce;
+}
+.main .doc .contentTable tr:hover .pd.name a {
+  text-decoration: underline;
+}
+.main .doc .contentTable tr:hover .pd.actions .goStudy strong {
+  background-position: center -288px;
+}
+.main .doc .contentTable tr:hover .pd.actions .ntdBuy strong {
+  background-position: center -192px;
+}
+.main .doc .contentTable tr:hover .pd.actions .video strong {
+  background-position: center -160px;
+}
+.main .doc .contentTable tr:hover .pd.actions .setToBuy strong {
+  background-position: center -192px;
+}
+.main .doc .contentTable tr:hover .pd.actions .pointBuy strong {
+  background-position: center -224px;
+}
+.main .doc .contentTable tr:hover .pd.actions .removeItem strong {
+  background-position: center -256px;
+}

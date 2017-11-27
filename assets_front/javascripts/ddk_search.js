@@ -1,0 +1,5 @@
+DDK.searchs = {
+	init : function (){
+		
+	}
+};

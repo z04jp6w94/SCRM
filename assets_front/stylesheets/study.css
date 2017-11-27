@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .studyInfo dt button, .main .doc .final button {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main .wrapper .doc .master {
+  float: right;
+  width: 76.7%;
+}
+.main .wrapper .doc .sideColumn {
+  display: block;
+  float: left;
+  width: 20.1%;
+}
+.main .doc .studyInfo {
+  position: relative;
+  padding-top: 50px;
+}
+.main .doc .studyInfo dt.open,
+.main .doc .studyInfo dd.open {
+  display: block;
+  background-color: #f6f6f6;
+}
+.main .doc .studyInfo dd {
+  display: none;
+}
+.main .doc .studyInfo dt {
+  position: absolute;
+  top: 0;
+  width: 20%;
+}
+.main .doc .studyInfo dt button {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding: 0 30px;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  color: #000;
+  cursor: pointer;
+  background-color: #e5e5e5;
+  text-decoration: none;
+}
+.main .doc .studyInfo dt button span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .studyInfo dt.open button,
+.main .doc .studyInfo dt:hover button {
+  color: #fff;
+  background-color: #f7931e;
+}
+.main .doc .studyInfo dt.inLeft {
+  left: 0;
+}
+.main .doc .studyInfo dt.inRight {
+  left: 21%;
+}
+.main .doc .studyInfo dd h4 {
+  padding: 20px 0;
+  margin-left: 15px;
+}
+.main .doc .studyInfo dd h4 span {
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding-left: 10px;
+  border-left: #f7931e solid 3px;
+}
+.main .doc .studyInfo dd .text {
+  padding: 25px;
+  line-height: 1.55;
+}
+.main .doc .courseEmpty {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #f7931e solid 1px;
+  background-color: #f6f6f6;
+  padding: 200px 0;
+  margin-bottom: 60px;
+}
+.main .doc .courseEmpty p {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  text-align: center;
+  line-height: 1.55;
+}
+.main .doc .final {
+  margin-top: -150px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.main .doc .final button {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,小標題*/
+  font-size: 112.2%;
+  cursor: pointer;
+  padding: 0 95px;
+  height: 50px;
+  background-color: #707070;
+}
+.main .doc .final button span {
+  display: inline-block;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/frame_study_arrow_01.png");
+}
+.main .doc .final button:hover {
+  background-color: #f7931e;
+}
+.main .doc .final button:hover span {
+  background-position: 5px center;
+}
+.main .doc .final .buyBtn {
+  margin-right: 15px;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.crew {
+  width: 15%;
+}
+.main .doc .contentTable .pd.actions {
+  text-align: center;
+  width: 11%;
+}
+.main .doc .sideColumn .info {
+  position: relative;
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 20px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_study_info_bg.gif");
+}
+.main .doc .sideColumn .info .inLeft,
+.main .doc .sideColumn .info .inRight {
+  float: none;
+}
+.main .doc .sideColumn .info .inLeft {
+  margin-bottom: 25px;
+}
+.main .doc .sideColumn .info div h2,
+.main .doc .sideColumn .info div h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.main .doc .sideColumn .info div h2 .dart {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  position: absolute;
+  display: inline;
+  top: 50px;
+  left: 0;
+  height: 30px;
+  border-left: #f7931e solid 5px;
+}
+.main .doc .sideColumn .info div h2 span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  line-height: 1.55;
+}
+.main .doc .sideColumn .info div h2 strong {
+  display: inline-block;
+  font-weight: normal;
+  color: #f7931e;
+}
+.main .doc .sideColumn .info div h4 span {
+  line-height: 1.55;
+}
+.main .doc .sideColumn .info div > span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  line-height: 1.55;
+}

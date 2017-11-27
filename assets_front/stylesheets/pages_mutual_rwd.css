@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .mixAlert .Alert.Cart figure, .main header .links h1, .main footer .siteMap dl dd ul {
+  margin: 0 auto;
+}
+
+.main header nav.rwd .closeBtn {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+#pingForRwd p {
+  float: right;
+}
+
+/** 給ui 組件使用 begin */
+.main {
+  /* 客製化Alert 組件 begin */
+  /* 客製化Alert 組件 end */
+}
+.main .mixAlert {
+  top: 1%;
+  left: 1%;
+  bottom: 1%;
+  right: 1%;
+  min-width: 94%;
+}
+.main .mixAlert article {
+  padding: 40px 10px;
+  max-width: calc(100% - 30px);
+}
+.main .mixAlert .Alert dl dd .doneBtn {
+  text-align: left;
+}
+.main .mixAlert .Alert.Cart figure {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 30px;
+  width: 60%;
+  max-width: 75%;
+}
+.main .mixAlert .Alert.Cart dl {
+  margin-left: 20px;
+}
+.main .mixAlert .Alert.Gift dl {
+  width: 90%;
+}
+.main .mixAlert .Alert.Confirm dl dd .doneBtn {
+  margin-right: 30px;
+}
+.main .mixAlert .Alert.Confirm dl dd .deniedBtn {
+  margin-left: 30px;
+}
+
+/** 給ui 組件使用 end */
+.main header,
+.main footer,
+.main header .links,
+.main header nav ul,
+.main .grandBanner,
+.main .wrapper,
+.main footer .siteMap table {
+  width: auto;
+  max-width: inherit;
+  min-width: inherit;
+  margin-left: 0;
+  margin-right: 0;
+}
+.main header .links {
+  position: relative;
+}
+.main header .links h1 {
+  float: none;
+  width: 43.75%;
+  height: 88px;
+  padding-left: 0;
+}
+.main header .links h1 a {
+  background-size: contain;
+}
+.main header .links h1.close {
+  display: none;
+}
+.main header .links ul {
+  float: none;
+  padding-top: 0;
+  position: absolute;
+  top: 28px;
+  right: 4.6875%;
+  z-index: 1055;
+}
+@media only screen and (orientation: landscape) {
+  .main header .links ul {
+    right: 2.34375%;
+  }
+}
+.main header .links ul li,
+.main header .links ul li:before,
+.main header .links ul:before {
+  display: none;
+}
+.main header .links ul li.search {
+  display: list-item;
+}
+.main header .links ul li.search button.openSearch,
+.main header .links ul li.search button.doSearch.open {
+  display: inline-block;
+}
+.main header .links ul li.search button.openSearch.close,
+.main header .links ul li.search button.doSearch {
+  display: none;
+}
+.main header .links ul li.search button.doSearch {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.main header .links ul li.search input {
+  display: none;
+  padding: 9px 8px;
+}
+.main header .links ul li.search.open input {
+  display: inline-block;
+  width: calc(100vw - 2px - 16px - 43px - 10px - 30px);
+}
+.main header .links .rwdMenuBtn {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 4.6875%;
+  width: 60px;
+  height: 60px;
+  background-position: center center;
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_rwdmenu_icon.gif");
+}
+.main header .links .rwdMenuBtn.close {
+  display: none;
+}
+.main header nav.normal {
+  display: none;
+}
+.main header nav.rwd {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  background-image: url("../images/frame_site_rwd_menu_bg.png");
+  z-index: 1020;
+}
+.main header nav.rwd .home,
+.main header nav.rwd .closeBtn {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.main header nav.rwd .home {
+  top: 20px;
+  left: 15px;
+  padding: 5px 0;
+  padding-left: 33px;
+  text-decoration: none;
+  color: #fff;
+  background-position: left center;
+  background-image: url("../images/frame_site_rwd_menu_home_btn.png");
+}
+.main header nav.rwd .home span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main header nav.rwd .closeBtn {
+  top: 7px;
+  right: 15px;
+  width: 55px;
+  height: 55px;
+  background-position: center center;
+  background-image: url("../images/frame_site_rwd_menu_close_btn.png");
+}
+.main header nav.rwd .closeBtn span {
+  display: none;
+}
+.main header nav.rwd .box {
+  /*padding: 0px 12.5%;*/
+  padding-left: 12.5%;
+  padding-top: 90px;
+  padding-bottom: 35px;
+}
+.main header nav.rwd .box dl {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+.main header nav.rwd .box dl dt {
+  margin-bottom: 15px;
+}
+.main header nav.rwd .box dl dt a {
+  display: block;
+  border-left: #f7931e solid 7px;
+  padding-left: 5px;
+  color: #f7931e;
+  text-decoration: none;
+}
+.main header nav.rwd .box dl dt a span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main header nav.rwd .box br.break-2 {
+  display: block;
+  width: 100%;
+}
+.main header nav.rwd .box ul {
+  padding-left: 17px;
+}
+.main header nav.rwd .box ul li {
+  margin-bottom: 5px;
+}
+.main header nav.rwd .box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.main header nav.rwd .box ul li a.current {
+  color: #f7931e;
+  text-decoration: underline;
+}
+.main header nav.rwd .box ul li a:hover {
+  color: #f7931e;
+  text-decoration: underline;
+}
+.main header nav.rwd .box ul li a span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.55;
+}
+.main header nav.rwd.open {
+  display: block;
+}
+.main footer .siteMap {
+  padding: 0;
+}
+.main footer .siteMap > table,
+.main footer .siteMap > table tbody,
+.main footer .siteMap > table tr,
+.main footer .siteMap > table tr td {
+  display: block;
+  width: 100%;
+}
+.main footer .siteMap > table tr td .spLine {
+  position: static;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+.main footer .siteMap dl dt {
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+.main footer .siteMap dl dt h3 {
+  margin-right: -22px;
+  display: inline-block;
+  padding-right: 22px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 102%;
+  background-image: url("../images/frame_site_footer_item_label_close.gif");
+}
+.main footer .siteMap dl dt h3.open {
+  background-image: url("../images/frame_site_footer_item_label_open.gif");
+}
+.main footer .siteMap dl dt button {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (orientation: landscape) {
+  .main footer .siteMap {
+    /*橫向*/
+  }
+  .main footer .siteMap dl dt {
+    padding: 15px 0;
+  }
+}
+.main footer .siteMap dl dd {
+  display: none;
+  padding-bottom: 20px;
+}
+.main footer .siteMap dl dd ul {
+  display: block;
+  width: 80%;
+}
+.main footer .siteMap dl dd ul li {
+  float: left;
+  width: 50%;
+}
+.main footer .siteMap dl dd ul li br.break-2 {
+  display: block;
+  width: 100%;
+}
+.main footer .siteMap dl dd.open {
+  display: block;
+}
+.main footer .cprs {
+  padding: 8px 15px;
+}
+.main footer .cprs p,
+.main footer .cprs address {
+  font-size: 88%;
+  text-align: left;
+  line-height: 1.5;
+}
+.main footer .cprs address br {
+  display: inline-block;
+}
+.main .wrapper .doc.heading {
+  padding: 15px 0;
+}
+.main .wrapper .breadCrumb {
+  padding: 0 15px;
+}
+.main .wrapper .doc .master {
+  padding: 0 15px;
+}
+.main .grandBanner-dots {
+  bottom: 0;
+}
+.main .grandBanner-dots li {
+  margin: 0 3px;
+}
+.main .grandBanner .controls {
+  display: none;
+}
+@media only screen and (orientation: portrait) {
+  .main .grandBanner {
+    /*直向*/
+  }
+  .main .grandBanner .ctx {
+    height: 60vh;
+  }
+  .main .grandBanner .ctx figure img {
+    display: none;
+  }
+  .main .grandBanner .ctx figure img.rwd {
+    display: block;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .main .grandBanner .ctx {
+    height: 25vw;
+  }
+  .main .grandBanner .ctx figure img {
+    display: block;
+  }
+  .main .grandBanner .ctx figure img.rwd {
+    display: none;
+  }
+}
+.main .examsFly br {
+  display: inline-block;
+}
+.main .examsFly ul {
+  text-align: left;
+}
+.main .examsFly ul li:before {
+  display: none;
+}
+.main .examsFly ul li.open {
+  display: list-item;
+  width: auto;
+  padding: 0 15px;
+  text-align: left;
+}
+@media only screen and (orientation: landscape) {
+  .main .examsFly {
+    /*橫向*/
+  }
+  .main .examsFly ul {
+    text-align: center;
+  }
+  .main .examsFly br {
+    display: none;
+  }
+  .main .examsFly ul li:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    /*搭配:before 擬元素的垂直置中效果part1*/
+  }
+  .main .examsFly ul li.open {
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+  }
+}
+.main .siteHelper .goTop {
+  display: none;
+}
+.main .siteHelper ul {
+  position: static;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+}
+.main .siteHelper ul li {
+  float: left;
+  width: 33.33%;
+}
+.main .siteHelper ul li a {
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main .doc .toBuy:before {
+  display: none;
+}
+.main .doc .toBuy {
+  height: auto;
+}
+.main .doc .toBuy .buyBtn,
+.main .doc .toBuy .points {
+  display: block;
+  width: 100%;
+}
+.main .doc .toBuy .points {
+  padding: 0;
+  text-align: center;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main header .links h1 {
+    height: 120px;
+  }
+  .main header .links ul {
+    top: 44px;
+    right: 1.8%;
+  }
+  .main header .links .rwdMenuBtn {
+    top: 30px;
+  }
+  .main header nav.normal {
+    display: block;
+  }
+  .main .grandBanner .controls {
+    display: block;
+  }
+  .main .examsFly br {
+    display: none;
+  }
+  .main .examsFly ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .main .examsFly ul li:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    /*搭配:before 擬元素的垂直置中效果part1*/
+  }
+  .main .examsFly ul li.open {
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+  }
+  .main footer .cprs p,
+  .main footer .cprs address {
+    /*內文,小標題*/
+    font-size: 112.2%;
+  }
+  .main .doc .toBuy {
+    text-align: left;
+  }
+  .main .doc .toBuy .buyBtn,
+  .main .doc .toBuy .points {
+    display: inline-block;
+    vertical-align: middle;
+    /*搭配:before 擬元素的垂直置中效果part2*/
+    width: auto;
+  }
+  .main .doc .toBuy .buyBtn {
+    margin-left: 0px;
+    width: calc(100% - 65% - 2px);
+  }
+  .main .doc .toBuy .points {
+    width: 60%;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .grandBanner .ctx {
+    height: 25vw;
+  }
+  .main .grandBanner .ctx figure img {
+    display: block;
+  }
+  .main .grandBanner .ctx figure img.rwd {
+    display: none;
+  }
+  .main footer .cprs p,
+  .main footer .cprs address {
+    /*內文,小標題*/
+    font-size: 112.2%;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .main footer .cprs address br {
+    display: none;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .grandBanner .ctx {
+    height: 78vh;
+  }
+  .main .grandBanner .ctx figure img {
+    display: none;
+  }
+  .main .grandBanner .ctx figure img.rwd {
+    display: block;
+  }
+}
+/* 主流平板直向 end */

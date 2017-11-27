@@ -1,0 +1,555 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.main .doc .toBuy:before, .main .doc .registering .sheet th:before,
+.main .doc .registering .sheet td:before, .main .doc .registering .sideOptions label:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/
+}
+
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet td span,
+.main .doc .registering .sheet .textType,
+.main .doc .registering .sheet img {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/
+}
+
+.main .doc .registering .morePoints {
+  background: none;
+  border: none;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main h3.subTitle {
+  margin-bottom: 25px;
+  background-color: #ffe8ce;
+  text-align: center;
+}
+.main h3.subTitle span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  display: inline-block;
+  padding: 13px 0px;
+  padding-left: 35px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_payment_title_bg.gif");
+}
+.main .doc .paySteps {
+  text-align: center;
+}
+.main .doc .paySteps ol {
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: inline-block;
+  list-style: none;
+}
+.main .doc .paySteps ol li {
+  float: left;
+  padding-right: 80px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../images/frame_payment_step_arrow.gif");
+}
+.main .doc .paySteps ol li:last-child {
+  padding-right: 0;
+}
+.main .doc .paySteps ol li strong {
+  display: block;
+  height: 105px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.main .doc .paySteps ol li strong span {
+  display: none;
+}
+.main .doc .paySteps ol li.sp1 strong {
+  width: 154px;
+  background-image: url("../images/frame_payment_step_01.gif");
+}
+.main .doc .paySteps ol li.sp2 strong {
+  width: 182px;
+  background-image: url("../images/frame_payment_step_02.gif");
+}
+.main .doc .paySteps ol li.sp3 strong {
+  width: 158px;
+  background-image: url("../images/frame_payment_step_03.gif");
+}
+.main .doc .paySteps ol li.sp4 strong {
+  width: 100px;
+  background-image: url("../images/frame_payment_step_04.gif");
+}
+.main .doc .paySteps ol li.sp5 strong {
+  width: 115px;
+  background-image: url("../images/frame_payment_step_05.gif");
+}
+.main .doc .paySteps ol li.current strong {
+  background-position: left bottom;
+}
+.main .doc .contentTable {
+  /*複寫*/
+  margin-bottom: 25px;
+}
+.main .doc .contentTable article {
+  position: relative;
+  padding: 15px;
+  background-color: #ffe8ce;
+}
+.main .doc .contentTable article strong {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.main .doc .contentTable article span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+  font-weight: bold;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.main .doc .contentTable tr:hover {
+  background-color: #faefe2;
+}
+.main .doc .contentTable tr.theSet,
+.main .doc .contentTable tr.theSet td {
+  background-color: #ffe8ce;
+}
+.main .doc .contentTable tr.theSet:hover,
+.main .doc .contentTable tr.theSet:hover td {
+  background-color: #f7931e;
+}
+.main .doc .contentTable .pd.set strong,
+.main .doc .contentTable .pd.set span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  font-weight: bold;
+}
+.main .doc .contentTable .pd.price {
+  width: 18%;
+}
+.main .doc .contentTable .pd.actions {
+  width: 7%;
+}
+.main .doc .morePoints {
+  margin-bottom: 5px;
+}
+.main .doc .morePoints .box {
+  width: 100%;
+}
+.main .doc .morePoints .box td {
+  width: 30%;
+  padding: 0 15px;
+}
+.main .doc .morePoints .box td strong {
+  color: #ff0000;
+}
+.main .doc .morePoints .box .pd {
+  width: auto;
+  text-align: center;
+}
+.main .doc .morePoints .box .pd span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main .doc .morePoints .box .pd.points {
+  text-align: right;
+}
+.main .doc .morePoints .box .toBuy {
+  text-align: center;
+}
+.main .doc .counting {
+  margin-top: 60px;
+}
+.main .doc .counting .secondary {
+  display: none;
+}
+.main .doc .counting .plusComma {
+  font-weight: bolder;
+}
+.main .doc .counting .total,
+.main .doc .counting .pay {
+  width: 65%;
+  float: right;
+}
+.main .doc .counting .total th,
+.main .doc .counting .total td,
+.main .doc .counting .pay th,
+.main .doc .counting .pay td {
+  padding: 15px;
+}
+.main .doc .counting .total th,
+.main .doc .counting .pay th {
+  width: 20%;
+  text-align: left;
+}
+.main .doc .counting .total th strong,
+.main .doc .counting .pay th strong {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .counting .total td,
+.main .doc .counting .pay td {
+  padding-left: 125px;
+}
+.main .doc .counting .total td span,
+.main .doc .counting .pay td span {
+  /*名詞解釋標題,標準尺寸*/
+  font-size: 142.8%;
+}
+.main .doc .counting .total td span.cash,
+.main .doc .counting .total td span.points,
+.main .doc .counting .pay td span.cash,
+.main .doc .counting .pay td span.points {
+  width: 40%;
+  text-align: center;
+}
+.main .doc .counting .total td span.plusComma,
+.main .doc .counting .pay td span.plusComma {
+  width: 18%;
+  text-align: center;
+}
+.main .doc .counting .total {
+  border-bottom: #a0a0a0 solid 1px;
+}
+.main .doc .counting .total br {
+  display: none;
+}
+.main .doc .counting .total span,
+.main .doc .counting .total strong {
+  /*font-weight: normal;*/
+}
+.main .doc .counting .total .cash,
+.main .doc .counting .total .points {
+  display: inline-block;
+  /*width: 24%;
+  text-align: right;*/
+}
+.main .doc .counting .total .points {
+  color: #ff0000;
+}
+.main .doc .counting .pay th strong,
+.main .doc .counting .pay td span {
+  display: inline-block;
+  /*margin-bottom: 25px;*/
+}
+.main .doc .counting .pay .cash,
+.main .doc .counting .pay .points {
+  /*
+  width: 24%;
+  text-align: right;
+  */
+}
+.main .doc .counting .pay .cash {
+  /*margin-left: 25%;*/
+}
+.main .doc .counting .pay .points {
+  /*margin-left: 76%;*/
+  color: #ff0000;
+}
+.main .doc .tradeFinish {
+  padding: 40px 0;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #f7931e solid 1px;
+  background-color: #f6f6f6;
+}
+.main .doc .tradeFinish .status p {
+  /*內文,小標題*/
+  font-size: 112.2%;
+  line-height: 1.8;
+  text-align: center;
+}
+.main .doc .tradeFinish .status p a {
+  color: #f7931e;
+}
+.main .doc .tradeFinish .status.fail p {
+  color: #ff0000;
+  font-weight: bold;
+}
+.main .doc .toBuy {
+  /*覆寫*/
+  text-align: right;
+  margin-bottom: 15px;
+}
+.main .doc .toBuy.pointsOnly:before {
+  display: none;
+}
+.main .doc .toBuy.pointsOnly {
+  height: 0;
+  position: relative;
+  margin-bottom: 0;
+  text-align: center;
+}
+.main .doc .toBuy.pointsOnly .points {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 270px;
+  height: 46px;
+  line-height: 48px;
+  background-color: #fff;
+  padding: 0;
+}
+.main .doc .final {
+  /*覆寫*/
+  padding: 30px 0;
+  text-align: right;
+}
+.main .doc .final .nextBtn,
+.main .doc .final .prevBtn {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: none;
+  padding: 0 75px;
+}
+.main .doc .final .prevBtn {
+  margin-right: 30px;
+  color: #fff;
+  background-color: #707070;
+}
+
+/* 會員表格共用 begin */
+.main .pageOnly-width-330 {
+  width: 27.54591%;
+}
+.main .pageOnly-width-440 {
+  width: 36.72788%;
+}
+.main .pageOnly-width-570 {
+  width: 47.5793%;
+}
+.main .pageOnly-width-680 {
+  width: 56.76127%;
+}
+.main .pageOnly-width-990 {
+  width: 82.63773%;
+}
+.main .inLeft {
+  float: left;
+  width: 40%;
+}
+.main .inLeft.shift {
+  padding-right: 10%;
+}
+.main .inRight {
+  float: right;
+  width: 40%;
+}
+.main .inRight.shift {
+  padding-left: 10%;
+}
+.main .doc .registering .sheet {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+.main .doc .registering .sheet th,
+.main .doc .registering .sheet td {
+  /*border: #ff0000 solid 1px;*/
+  padding: 5px 0;
+}
+.main .doc .registering .sheet th {
+  text-align: left;
+  font-weight: normal;
+}
+.main .doc .registering .sheet th span,
+.main .doc .registering .sheet th sup,
+.main .doc .registering .sheet td span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .registering .sheet th sup {
+  color: #ff0000;
+}
+.main .doc .registering .sheet td {
+  position: relative;
+  width: 65%;
+}
+.main .doc .registering .sheet td .error {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  color: #ff0000;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.main .doc .registering .sheet td .error strong {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: none;
+  font-weight: normal;
+  padding-left: 3px;
+}
+.main .doc .registering .sheet td .error strong.open {
+  display: inline;
+}
+.main .doc .registering .sheet td .error.open {
+  display: inline;
+}
+
+/* 會員表格共用 end */
+.main h3.reg {
+  background-color: #707070;
+  text-align: center;
+}
+.main h3.reg span {
+  /*網站選單,標準尺寸*/
+  font-size: 122.4%;
+  display: inline-block;
+  padding: 13px 0px;
+  color: #fff;
+}
+.main .doc .regWrapper {
+  padding-top: 40px;
+  background-color: #f6f6f6;
+}
+.main .doc .regWrapper .final {
+  text-align: center;
+}
+.main .doc .registering .multiCheckTrigger {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.main .doc .registering .sideOptions.open {
+  display: inline-block;
+}
+.main .doc .registering .sideOptions {
+  display: none;
+  margin-bottom: 5px;
+}
+.main .doc .registering .sideOptions label {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  border: #a6a6a6 solid 1px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #fff;
+}
+.main .doc .registering .sideOptions label input {
+  position: absolute;
+  display: none;
+}
+.main .doc .registering .sideOptions label strong,
+.main .doc .registering .sideOptions label span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main .doc .registering .sideOptions label strong {
+  width: 58px;
+  height: 58px;
+  margin-right: 3px;
+  background-repeat: no-repeat;
+  background-image: url("../images/frame_payment_trade_bg.gif");
+}
+.main .doc .registering .sideOptions label span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  padding-top: 27px;
+}
+.main .doc .registering .sideOptions .byCredit strong {
+  background-position: left bottom;
+}
+.main .doc .registering .sideOptions .byATM strong {
+  background-position: left top;
+}
+.main .doc .registering .sideOptions .byCredit.checked,
+.main .doc .registering .sideOptions .byATM.checked,
+.main .doc .registering .sideOptions .byCredit:hover,
+.main .doc .registering .sideOptions .byATM:hover {
+  border-color: #f7931e;
+}
+.main .doc .registering .sideOptions .byCredit.checked strong,
+.main .doc .registering .sideOptions .byCredit:hover strong {
+  background-position: right bottom;
+}
+.main .doc .registering .sideOptions .byCredit.checked span,
+.main .doc .registering .sideOptions .byCredit:hover span {
+  color: #f7931e;
+}
+.main .doc .registering .sideOptions .byATM.checked strong,
+.main .doc .registering .sideOptions .byATM:hover strong {
+  background-position: right top;
+}
+.main .doc .registering .sideOptions .byATM.checked span,
+.main .doc .registering .sideOptions .byATM:hover span {
+  color: #f7931e;
+}
+.main .doc .registering .morePoints.open {
+  display: inline-block;
+}
+.main .doc .registering .morePoints {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  display: none;
+  background-color: #f7931e;
+  cursor: pointer;
+  color: #fff;
+  padding: 3px 25px;
+}
+.main .doc .registering .morePoints span {
+  font-size: inherit !important;
+}
+.main .doc .registering .multiTextType {
+  height: 5em;
+  min-height: 5em;
+}
+.main .doc .registering .multiTextType,
+.main .doc .registering .textType {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*內文,標準尺寸*/
+  font-size: 102%;
+  padding: 8px 5px;
+  width: calc(98% - 5px - 5px);
+  border: #a6a6a6 solid 1px;
+  color: #333;
+}
+.main .doc .registering .textType.security {
+  width: calc(43% - 5px - 5px);
+}

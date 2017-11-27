@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .wrapper .doc .master,
+.main .wrapper .doc .sideColumn {
+  float: none;
+  width: auto;
+}
+.main .wrapper .doc .sideColumn {
+  padding: 0 15px;
+}
+.main .doc .studyInfo dt {
+  width: 50%;
+}
+.main .doc .studyInfo dt.inLeft {
+  left: 0;
+}
+.main .doc .studyInfo dt.inRight {
+  left: 50%;
+}
+.main .doc .courseEmpty {
+  margin-bottom: 15px;
+  padding: 15vh 5px;
+}
+.main .doc .courseEmpty p {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+.main .doc .final {
+  margin-top: 0;
+  padding-bottom: 50px;
+  text-align: left;
+}
+.main .doc .final button {
+  padding: 0;
+  width: calc(50% - 8px);
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.name {
+  width: calc(100% - 10px - 10px);
+}
+.main .doc .contentTable .pd.crew,
+.main .doc .contentTable .pd.importDate,
+.main .doc .contentTable .pd.expiredDate {
+  width: calc(75% - 10px - 10px);
+}
+.main .doc .contentTable .pd.actions {
+  position: absolute;
+  right: 0;
+  bottom: 7.5px;
+  text-align: right;
+  width: calc(33% - 10px - 10px);
+}
+.main .doc .sideColumn .info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .sideColumn .info .inLeft {
+    float: left;
+    width: 60%;
+    margin-bottom: 0;
+  }
+  .main .doc .sideColumn .info .inRight {
+    float: right;
+    margin-right: 20px;
+    width: calc(37% - 20px);
+  }
+}
+.main .doc .sideColumn .info div h2 .dart {
+  top: 15px;
+}
+.main .doc .sideColumn .info div h2 span,
+.main .doc .sideColumn .info div h4 span {
+  /*內文,小標題*/
+  font-size: 112.2%;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.importDate,
+  .main .doc .contentTable .pd.expiredDate {
+    display: inline-block;
+    width: auto;
+  }
+  .main .doc .contentTable .pd.actions {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 15px;
+    text-align: right;
+    width: calc(30% - 10px - 10px);
+  }
+  .main .doc .sideColumn .info .inLeft {
+    float: left;
+    width: 60%;
+    margin-bottom: 0;
+  }
+  .main .doc .sideColumn .info .inRight {
+    float: right;
+    margin-right: 20px;
+    width: calc(37% - 20px);
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .witnessList {
+  background: none;
+}
+.main .doc .witnessList ul {
+  display: block;
+  width: auto;
+}
+.main .doc .witnessList ul li {
+  width: calc(50% - 15px);
+  margin-left: 0;
+  margin-right: 15px;
+}
+.main .doc .witnessList ul li:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+.main .doc .witnessList ul li a > strong {
+  height: 100px;
+}
+.main .doc .witnessList ul li a > strong .play {
+  background-size: 25%;
+}
+.main .doc .witnessList ul li a > span {
+  /*網站footer,標準尺寸*/
+  font-size: 91.8%;
+  height: 43px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .witnessList {
+    /*橫向*/
+  }
+  .main .doc .witnessList ul li a > strong {
+    height: 160px;
+  }
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .witnessList ul li {
+    width: 30.33%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 15px;
+  }
+  .main .doc .witnessList ul li:nth-child(2n) {
+    float: left;
+    margin-right: 1.5%;
+  }
+  .main .doc .witnessList ul li a > span {
+    /*內文,標準尺寸*/
+    font-size: 102%;
+    height: 49px;
+  }
+  .main .doc .witnessList ul li a > strong {
+    height: 135px;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .witnessList ul li a > strong {
+    height: 190px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

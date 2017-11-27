@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .maps ul li {
+  padding: 0;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.main .doc .maps ul li iframe,
+.main .doc .maps ul li section {
+  float: none;
+  width: 100%;
+}
+.main .doc .maps ul li iframe {
+  margin-bottom: 15px;
+  height: 210px;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .maps {
+    /*橫向*/
+  }
+  .main .doc .maps ul li iframe {
+    height: 360px;
+  }
+}
+.main .doc .maps ul li section {
+  margin-left: 0;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .maps ul li section > *:nth-child(2) {
+    float: left;
+  }
+  .main .doc .maps ul li section > *:nth-child(3) {
+    float: right;
+    width: 55%;
+    padding-right: 15px;
+    text-align: right;
+  }
+  .main .doc .maps ul li section > *:nth-child(3) br {
+    display: none;
+  }
+  .main .doc .maps ul li section p strong {
+    padding: 0;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .maps ul li iframe {
+    height: 560px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+  .main .doc .maps ul li iframe {
+    height: 430px;
+  }
+}
+/* 主流平板直向 end */

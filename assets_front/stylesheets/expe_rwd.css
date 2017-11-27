@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .search:before {
+  display: none;
+}
+.main .doc .search > span {
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main .doc .search select,
+.main .doc .search .searchBtn {
+  width: 100%;
+}
+.main .doc .expList {
+  margin: -15px;
+}
+.main .doc .expList ul .break-2 {
+  display: block;
+}
+.main .doc .expList ul .break-4,
+.main .doc .expList ul .break-6 {
+  display: none;
+}
+.main .doc .expList ul li {
+  width: 45%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+@media only screen and (orientation: landscape) {
+  .main .doc .expList ul li a strong {
+    height: 175px;
+  }
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .search > span {
+    display: inline;
+  }
+  .main .doc .search select {
+    width: 26%;
+  }
+  .main .doc .search .searchBtn {
+    width: 19%;
+  }
+  .main .doc .expList {
+    margin: 0;
+  }
+  .main .doc .expList ul .break-4 {
+    display: block;
+  }
+  .main .doc .expList ul .break-2,
+  .main .doc .expList ul .break-6 {
+    display: none;
+  }
+  .main .doc .expList ul li {
+    width: 23.4%;
+    margin-right: 0.8%;
+    margin-left: 0.8%;
+  }
+}
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .expList ul li a strong {
+    height: 175px;
+  }
+}
+
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+  .main .doc .expList ul .break-2,
+  .main .doc .expList ul .break-4 {
+    display: none;
+  }
+  .main .doc .expList ul .break-6 {
+    display: block;
+  }
+  .main .doc .expList ul li {
+    float: left;
+    width: 15.5%;
+    margin-right: 0.5%;
+    margin-left: 0.6%;
+    margin-bottom: 15px;
+  }
+  .main .doc .expList ul li a strong {
+    height: 95px;
+  }
+}
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */

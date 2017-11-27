@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... Easy100 友欣 升學網 ... */
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  /*橫向*/
+}
+@media only screen and (orientation: portrait) {
+  /*直向*/
+}
+.main .doc .keywords,
+.main .doc .resault {
+  margin-bottom: 0;
+}
+.main .doc .keywords dt,
+.main .doc .keywords dd,
+.main .doc .resault dt,
+.main .doc .resault dd {
+  float: none;
+  width: auto;
+}
+.main .doc .keywords dt,
+.main .doc .resault dt {
+  padding-left: 0;
+}
+.main .doc .keywords dt h3,
+.main .doc .resault dt h3 {
+  margin-left: 0;
+}
+.main .doc .keywords dt h3 span,
+.main .doc .resault dt h3 span {
+  padding-left: 15px;
+  border-left: #f7931e solid 3px;
+}
+.main .doc .keywords dd,
+.main .doc .resault dd {
+  padding: 15px 0;
+}
+.main .doc .keywords dd p span,
+.main .doc .keywords dd p a,
+.main .doc .resault dd p span,
+.main .doc .resault dd p a {
+  padding: 5px 15px;
+}
+.main .doc .keywords dd {
+  background-color: #ffe8ce;
+}
+.main .doc .keywords dd p span,
+.main .doc .keywords dd p a {
+  background-color: none;
+}
+.main .doc .resault {
+  background: none;
+}
+.main .doc .resault dd {
+  background-color: #eeeeee;
+}
+.main .doc .links li {
+  width: calc(50% - 5px);
+}
+.main .doc .links ul li:first-child {
+  margin-right: 10px;
+}
+.main .doc .links li a {
+  margin: 0;
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+}
+.main .doc .contentTable {
+  /*複寫*/
+}
+.main .doc .contentTable .pd.actions {
+  text-align: right;
+  width: auto;
+}
+.main .doc .contentTable.unbuy {
+  /*複寫*/
+}
+.main .doc .contentTable.unbuy .pd.actions {
+  text-align: right;
+  width: auto;
+}
+
+/******************************************************
+*                                                     *
+*                     手持裝置適應                    *
+*                                                     *
+******************************************************/
+/* 主流平板 begin */
+@media only screen and (min-device-width: 740px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.33) {
+  .main .doc .keywords dd p span,
+  .main .doc .keywords dd p a,
+  .main .doc .resault dd p span,
+  .main .doc .resault dd p a {
+    padding: 15px;
+  }
+  .main .doc .links {
+    padding-bottom: 0;
+  }
+  .main .doc .links li {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .main .doc .links ul li:first-child {
+    margin-right: 0;
+  }
+  .main .doc .links li a {
+    padding: 15px 45px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: left;
+  }
+  .main .doc .contentTable {
+    /*複寫*/
+  }
+  .main .doc .contentTable .pd.actions {
+    text-align: center;
+    width: 17%;
+  }
+}
+/* 主流平板 end */
+/* 主流平板橫向 begin */
+/* 主流平板橫向 end */
+/* 主流平板直向 end */
+/* 主流平板直向 end */
